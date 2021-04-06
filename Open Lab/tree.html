@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Binary Tree</title>
+
+
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="profile.css">
+</head>
+
+
+<body class="overlay-scrollbar">
+
+	<!-- navbar -->
+	<div class="navbar">
+		<!-- nav left -->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link">
+					<i class="fa fa-bars" onclick="collapseSidebar()"></i>
+				</a>
+			</li>
+			<li class="nav-item faculty">
+				<b><!--username--></b>
+			</li>
+		</ul>
+
+		<form class="navbar-search">
+			<input type="text" name="Search" class="navbar-search-input" placeholder="Search..">
+			<i class="fa fa-search"></i>
+		</form>
+
+		<ul class="navbar-nav nav-right">
+			<li class="nav-item mode">
+				<a class="nav-link" href="#" onclick="switchTheme()">
+					<i class="fa fa-moon-o dark"></i>
+				</a>
+			</li>
+
+      <ul class="navbar-nav nav-right">
+  			<li class="nav-item mode">
+  				<a class="nav-link" href="#">
+  					<i class="nothing"></i>
+  				</a>
+  			</li>
+
+
+			<li class="nav-item">
+			<li class="nav-item avt-wrapper">
+				<div class="avt dropdown">
+
+          <img src="logo.png" alt="User image" class="dropdown-toggle" data-toggle="user-menu">
+					<ul id="user-menu" class="dropdown-menu">
+						<li  class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fa fa-sign-out"></i>
+								</div>
+								<span>Logout</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<!-- end nav right -->
+	</div>
+	<!-- end navbar -->
+	<!-- sidebar -->
+	<div class="sidebar">
+		<ul class="sidebar-nav">
+			<li class="sidebar-nav-item">
+				<a href="tree.html" class="sidebar-nav-link active">
+					<div>
+						<i class="fa fa-tree"></i>
+					</div>
+					<span class='span'>
+						Binary Tree
+					</span>
+				</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a href="properties.html" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-gear"></i>
+					</div>
+					<span class='span'>Properties</span>
+				</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a href="types.html" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-sort"></i>
+					</div>
+					<span class='span'>Types</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="insert.html" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-random"></i>
+					</div>
+					<span class='span'>Insert & Delete</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="height.html" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-sort-amount-desc"></i>
+					</div>
+					<span class='span'>Height</span>
+				</a>
+			</li>
+      <li  class="sidebar-nav-item">
+				<a href="depth.html" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-sort-amount-asc"></i>
+					</div>
+					<span class='span'>Depth</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="traversal.html" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-tasks"></i>
+					</div>
+					<span class='span'>Traversal</span>
+				</a>
+			</li>
+			<!--<li  class="sidebar-nav-item">
+				<a href="#" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-question-circle"></i>
+					</div>
+					<span class='span'>Help</span>
+				</a>
+			</li>-->
+		</ul>
+	</div>
+
+	<div class="wrapper">
+
+		<div class="row">
+
+			<div class="col-10 col-m-12 col-sm-12">
+				<div class="card">
+					<div class="card-header">
+						<h1 style="font-size:2.5rem;">
+							Introduction to Binary Tree
+						</h1>
+          <!--  <i><a href="#" class="fancy-button bg-gradient1"><span>Edit Profile</span></a></i>-->
+ </div>
+
+
+
+					<div class="card-content">
+						<br>
+						<h3>Binary Tree </h3>
+	<p>A binary tree is a tree-type non-linear data structure with a maximum of two children for each parent.
+		 Every node in a binary tree has a left and right reference along with the data element. The node at the
+		  top of the hierarchy of a tree is called the root node. The nodes that hold other sub-nodes are the parent nodes.</p>
+
+<p>A parent node has two child nodes: the left child and right child. Hashing, routing data for network traffic,
+	 data compression, preparing binary heaps, and binary search trees are some of the applications that use a binary tree. </p>
+		<img src="bt1.png" alt="User image" class="center" style="height:500px;width:800px;">
+
+		<div class="col-11 col-m-12 col-sm-12" id="publication">
+				<div class="card">
+						<div class="card-header">
+							<h3>
+							Binary Tree Terminologies
+							</h3>
+
+		          <table>
+				<tbody>
+					<tr>
+						<td></td>
+						<td></td>
+				<tr>
+				<td>Node</td>
+				<td> It represents a termination point in a tree.</td>
+				<tr>
+					<td>Root</td>
+					<td>A tree’s topmost node.</td>
+
+					<tr>
+						<td>Root</td>
+						<td>A tree’s topmost node.</td>
+
+					<tr>	<td>Parent</td><td> Each node (apart from the root) in a tree that has at least one sub-node of its own is called a parent node.</td>
+						<tr><td>Child</td><td> A node that straightway came from a parent node when moving away from the root is the child node.</td>
+					<tr><td>	Leaf Node</td><td> These are external nodes. They are the nodes that have no child.</td>
+					<tr><td>	Internal Node</td><td> As the name suggests, these are inner nodes with at least one child.</td>
+				<tr><td>		Depth</td><td>The number of edges from the tree’s node to the root is.</td>
+			<tr><td>			Height</td><td> It is the number of edges from the node to the deepest leaf. The tree height is also considered the root height.</td>
+
+
+				</tbody>
+
+							</table>
+						</div>
+						</div>
+						</div>
+<br>
+<h3>Why Trees? </h3>
+<ul>
+<li>One reason to use trees might be because you want to store information that naturally forms a hierarchy. For example, the file system on a computer.</l1>
+<li>Trees (with some ordering e.g., BST) provide moderate access/search (quicker than Linked List and slower than arrays).
+<li>Trees provide moderate insertion/deletion (quicker than Arrays and slower than Unordered Linked Lists).
+<li> Like Linked Lists and unlike Arrays, Trees don’t have an upper limit on number of nodes as nodes are linked using pointers.
+</ul>
+<br>
+<h3>Main applications of trees include: </h3>
+<ol>
+	<li> Manipulate hierarchical data.
+<li>  Make information easy to search (see tree traversal).
+<li>  Manipulate sorted lists of data.
+<li> As a workflow for compositing digital images for visual effects.
+<li> Router algorithms
+<li> Form of a multi-stage decision-making (see business chess).
+</ol>
+</div>
+
+
+
+
+
+		</div>
+  </div>
+</div>
+
+ <script src='profile.js'></script>
+
+
+</body>
+</html>
