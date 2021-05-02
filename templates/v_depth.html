@@ -1,0 +1,508 @@
+<div id="glowscript" class="glowscript">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" href="https://www.glowscript.org/css/redmond/2.1/jquery-ui.custom.css" rel="stylesheet" />
+<link type="text/css" href="https://www.glowscript.org/css/ide.css" rel="stylesheet" />
+<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery-ui.custom.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/package/glow.3.1.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/package/RSrun.3.1.min.js"></script>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+
+// START JAVASCRIPT
+;(function() {;
+var ρσ_modules = {};
+ρσ_modules.pythonize = {};
+
+(function(){
+    function strings() {
+        var string_funcs, exclude, name;
+        string_funcs = set("capitalize strip lstrip rstrip islower isupper isspace lower upper swapcase center count endswith startswith find rfind index rindex format join ljust rjust partition rpartition replace split rsplit splitlines zfill".split(" "));
+        if (!arguments.length) {
+            exclude = (function(){
+                var s = ρσ_set();
+                s.jsset.add("split");
+                s.jsset.add("replace");
+                return s;
+            })();
+        } else if (arguments[0]) {
+            exclude = Array.prototype.slice.call(arguments);
+        } else {
+            exclude = null;
+        }
+        if (exclude) {
+            string_funcs = string_funcs.difference(set(exclude));
+        }
+        var ρσ_Iter0 = string_funcs;
+        ρσ_Iter0 = ((typeof ρσ_Iter0[Symbol.iterator] === "function") ? (ρσ_Iter0 instanceof Map ? ρσ_Iter0.keys() : ρσ_Iter0) : Object.keys(ρσ_Iter0));
+        for (var ρσ_Index0 of ρσ_Iter0) {
+            name = ρσ_Index0;
+            (ρσ_expr_temp = String.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name] = (ρσ_expr_temp = ρσ_str.prototype)[(typeof name === "number" && name < 0) ? ρσ_expr_temp.length + name : name];
+        }
+    };
+    if (!strings.__module__) Object.defineProperties(strings, {
+        __module__ : {value: "pythonize"}
+    });
+
+    ρσ_modules.pythonize.strings = strings;
+})();
+async function __main__() {
+"use strict";
+
+    var version, display, vector, print, arange, __name__, type, scene, ρσ_ls, tintro, tintro1;
+    version = ρσ_list_decorate([ "3.1", "glowscript" ]);
+    Array.prototype['+'] = function(r) {return this.concat(r)}
+    Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
+    window.__GSlang = "vpython";
+    display = canvas;
+    vector = vec;
+    print = GSprint;
+    arange = range;
+    __name__ = "__main__";
+    type = pytype;
+    scene = canvas();
+    fontloading();
+    await waitforfonts();
+    var strings = ρσ_modules.pythonize.strings;
+
+    strings();
+    "2";
+    ρσ_interpolate_kwargs.call(this, button, [ρσ_desugar_kwargs({text: "Start", pos: scene.title_anchor, bind: start_depth})]);
+    "3";
+    tintro = ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({text: "Click on the start button to begin", align: "center", color: color.green, pos: vector(0, 11, 0)})]);
+    "4";
+    tintro1 = ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({text: "Click on the start button to begin again", align: "center", color: color.green, pos: vector(0, 11, 0)})]);
+    "5";
+    tintro1.visible = false;
+    "6";
+    (await delay(5));
+    "7";
+    function node() {;
+    }
+    node.prototype.__init__ = async function __init__(data) {
+        var self = this;
+        "9";
+        self.data = data;
+        "10";
+        self.left = null;
+        "11";
+        self.right = null;
+        "12";
+        self.parent = null;
+        "13";
+        self.corof_x = 0;
+        "14";
+        self.corof_y = 0;
+        "15";
+        self.height = 0;
+    };
+    if (!node.prototype.__init__.__argnames__) Object.defineProperties(node.prototype.__init__, {
+        __argnames__ : {value: ["data"]},
+        __module__ : {value: null}
+    });
+    node.__argnames__ = node.prototype.__init__.__argnames__;
+    node.__handles_kwarg_interpolation__ = node.prototype.__init__.__handles_kwarg_interpolation__;
+    node.prototype.__repr__ = async function __repr__() {
+                return "<"["+"](__name__)["+"](".")["+"](this.constructor.name)["+"](" #")["+"](this.ρσ_object_id)["+"](">");
+    };
+    node.prototype.__str__ = async function __str__() {
+        return (await this.__repr__());
+    };
+    Object.defineProperty(node.prototype, "__bases__", {value: []});
+
+
+    "17";
+    async function delay(time) {
+        var ρσ_ls, t, deltat;
+        "18";
+        t = 0;
+        "19";
+        deltat = .05;
+        "20";
+        while (t["<"](time)) {
+            "21";
+            (await rate(100));
+            "22";
+            t = t["+"](deltat);
+        }
+    };
+    if (!delay.__argnames__) Object.defineProperties(delay, {
+        __argnames__ : {value: ["time"]},
+        __module__ : {value: null}
+    });
+
+    "23";
+    async function start_depth(b) {
+        var ρσ_ls, list_objects, ttopic, tins1, arr, n, x, i, depth, tins11, list_of_nodes, list_of_texts, list_of_edges, cor_x, cor_y, cor_z, val1, val_pow, diff, _GS_1, nodex, data1, node1, root, t, index, edge, ring_pointer, flag, flag1, list_texts, tins2, key, tins5, tin4, tins3, answer;
+        "24";
+        list_objects = ρσ_list_decorate([]);
+        "25";
+        tintro.visible = false;
+        "26";
+        tintro1.visible = false;
+        "27";
+        b.disabled = true;
+        "28";
+        ttopic = ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({text: "Depth of a node in binary tree : ", align: "center", color: color.green, pos: vector(0, 11, 0)})]);
+        "29";
+        list_objects.append(ttopic);
+        "30";
+        (await delay(5));
+        "31";
+        while (true) {
+            "32";
+            try {
+                "33";
+                tins1 = ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({text: "Enter the elements as an array with space inbetween", align: "center", color: color.yellow, pos: vector(0, 8, 0)})]);
+                "34";
+                list_objects.append(tins1);
+                "35";
+                (await delay(15));
+                (await sleep(.1));
+                "36";
+                arr = input("Enter the elements as an array with space inbetween");
+                "37";
+                arr = (await arr.split(" "));
+                "38";
+                n = len(arr);
+                "39";
+                for (var ρσ_Index1 = 0; ρσ_Index1["<"](n); ρσ_Index1++) {
+                    i = ρσ_Index1;
+                    "40";
+                    x = int(arr[(typeof i === "number" && i["<"](0)) ? arr.length["+"](i) : i]);
+                }
+                "41";
+                depth = floor(log(n, 2));
+                "42";
+                tins1.visible = false;
+                "43";
+                break;
+                "44";
+            } catch (ρσ_Exception) {
+                ρσ_last_exception = ρσ_Exception;
+                {
+                    "45";
+                    tins1.visible = false;
+                    "46";
+                    tins11 = ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({text: "Enter elements in proper format", align: "center", color: color.red, pos: vector(0, 8, 0)})]);
+                    "47";
+                    (await delay(15));
+                    "48";
+                    tins11.visible = false;
+                    "49";
+                    continue;
+                }
+            }
+        }
+        "50";
+        list_of_nodes = ρσ_list_decorate([]);
+        "51";
+        list_of_texts = ρσ_list_decorate([]);
+        "52";
+        list_of_edges = ρσ_list_decorate([]);
+        "53";
+        cor_x = 0;
+        "54";
+        cor_y = 0;
+        "55";
+        cor_z = 0;
+        "56";
+        val1 = 1;
+        "57";
+        val_pow = 1;
+        "58";
+        diff = depth;
+        "59";
+        _GS_1 = new node;
+        (await _GS_1.__init__(0));
+        nodex = _GS_1;
+        "60";
+        for (var ρσ_Index2 = 0; ρσ_Index2["<"](n); ρσ_Index2++) {
+            i = ρσ_Index2;
+            "61";
+            data1 = int(arr[(typeof i === "number" && i["<"](0)) ? arr.length["+"](i) : i]);
+            "62";
+            _GS_1 = new node;
+            (await _GS_1.__init__(data1));
+            node1 = _GS_1;
+            "63";
+            if ((i === val1 || typeof i === "object" && ρσ_equals(i, val1))) {
+                "64";
+                cor_x = 2["**"](diff);
+                "65";
+                diff=diff["-"](1);
+                "66";
+                val1=val1["+"](2["**"](val_pow));
+                "67";
+                val_pow=val_pow["+"](1);
+                "68";
+                cor_y=cor_y["-"](3);
+                "69";
+            }
+            if ((i === 0 || typeof i === "object" && ρσ_equals(i, 0))) {
+                "70";
+                root = node1;
+                "71";
+                root.parent = nodex;
+                "72";
+                t = ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({text: data1, align: "center", color: color.orange, pos: vector(cor_x, cor_y, cor_z)})]);
+                "73";
+                list_objects.append(t);
+                "74";
+                list_of_texts.append(t);
+                "75";
+            } else {
+                "76";
+                if (ρσ_equals(i["%"](2), 0)) {
+                    "77";
+                    index = (await Math.floor(i["-"](2)["/"](2)));
+                    "78";
+                    node1.corof_x = list_of_nodes[(typeof index === "number" && index["<"](0)) ? list_of_nodes.length["+"](index) : index].corof_x["+"](cor_x);
+                    "79";
+                    node1.corof_y = cor_y;
+                    "80";
+                    node1.parent = list_of_nodes[(typeof index === "number" && index["<"](0)) ? list_of_nodes.length["+"](index) : index];
+                    "81";
+                    t = ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({text: data1, align: "center", color: color.orange, pos: vector(node1.corof_x, cor_y, cor_z)})]);
+                    "82";
+                    list_objects.append(t);
+                    "83";
+                    list_of_texts.append(t);
+                    "84";
+                    edge = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(list_of_nodes[(typeof index === "number" && index["<"](0)) ? list_of_nodes.length["+"](index) : index].corof_x, cor_y["+"](3), cor_z), axis: vector(cor_x, 2.5["-u"](), cor_z), shaftwidth: .1})]);
+                    "85";
+                    list_objects.append(edge);
+                    "86";
+                    list_of_edges.append(edge);
+                    "87";
+                    list_of_nodes[(typeof index === "number" && index["<"](0)) ? list_of_nodes.length["+"](index) : index].right = node1;
+                    "88";
+                } else {
+                    "89";
+                    index = (await Math.floor(i["-"](1)["/"](2)));
+                    "90";
+                    node1.corof_x = list_of_nodes[(typeof index === "number" && index["<"](0)) ? list_of_nodes.length["+"](index) : index].corof_x["-"](cor_x);
+                    "91";
+                    node1.corof_y = cor_y;
+                    "92";
+                    node1.parent = list_of_nodes[(typeof index === "number" && index["<"](0)) ? list_of_nodes.length["+"](index) : index];
+                    "93";
+                    t = ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({text: data1, align: "center", color: color.orange, pos: vector(node1.corof_x, cor_y, cor_z)})]);
+                    "94";
+                    list_objects.append(t);
+                    "95";
+                    list_of_texts.append(t);
+                    "96";
+                    edge = ρσ_interpolate_kwargs.call(this, arrow, [ρσ_desugar_kwargs({pos: vector(list_of_nodes[(typeof index === "number" && index["<"](0)) ? list_of_nodes.length["+"](index) : index].corof_x, cor_y["+"](3), cor_z), axis: vector(cor_x["-u"](), 2.5["-u"](), cor_z), shaftwidth: .1})]);
+                    "97";
+                    list_objects.append(edge);
+                    "98";
+                    list_of_edges.append(edge);
+                    "99";
+                    list_of_nodes[(typeof index === "number" && index["<"](0)) ? list_of_nodes.length["+"](index) : index].left = node1;
+                }
+            }
+            "100";
+            list_of_nodes.append(node1);
+        }
+        "104";
+        ring_pointer = ρσ_interpolate_kwargs.call(this, ring, [ρσ_desugar_kwargs({pos: vector(list_of_nodes[0].corof_x, list_of_nodes[0].corof_y["+"](.5), 0), axis: vector(0, 0, 2), radius: 1, thickness: .1, color: color.white})]);
+        "105";
+        ring_pointer.visible = false;
+        "106";
+        async function finddepth(temp, list_texts) {
+            var ρσ_ls, t, d;
+            "107";
+            if ((temp === root || typeof temp === "object" && ρσ_equals(temp, root))) {
+                "108";
+                ring_pointer.visible = false;
+                "109";
+                ring_pointer.pos = vector(temp.corof_x, temp.corof_y["+"](.5), 0);
+                "110";
+                ring_pointer.color = color.white;
+                "111";
+                ring_pointer.visible = true;
+                "112";
+                (await delay(3));
+                "113";
+                ring_pointer.visible = false;
+                "114";
+                ring_pointer.pos = vector(temp.corof_x, temp.corof_y["+"](.5), 0);
+                "115";
+                ring_pointer.color = color.cyan;
+                "116";
+                ring_pointer.visible = true;
+                "117";
+                (await delay(3));
+                "118";
+                t = ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({text: 0, align: "center", color: color.green, pos: vector(temp.corof_x["-"](1.5), temp.corof_y, 0)})]);
+                "119";
+                list_texts.append(t);
+                "120";
+                return 0;
+                "121";
+            } else {
+                "122";
+                ring_pointer.visible = false;
+                "123";
+                ring_pointer.pos = vector(temp.corof_x, temp.corof_y["+"](.5), 0);
+                "124";
+                ring_pointer.color = color.white;
+                "125";
+                ring_pointer.visible = true;
+                "126";
+                (await delay(3));
+                "127";
+                d = 1["+"]((await finddepth(temp.parent, list_texts)));
+                "128";
+                t = ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({text: d, align: "center", color: color.green, pos: vector(temp.corof_x["-"](1.5), temp.corof_y, 0)})]);
+                "129";
+                list_texts.append(t);
+                "130";
+                if ((temp.left === null || typeof temp.left === "object" && ρσ_equals(temp.left, null)) && (temp.right === null || typeof temp.right === "object" && ρσ_equals(temp.right, null))) {
+                    "131";
+                    t.pos.x=t.pos.x["+"](1.5);
+                    "132";
+                    t.pos.y=t.pos.y["-"](2);
+                }
+                "133";
+                ring_pointer.visible = false;
+                "134";
+                ring_pointer.pos = vector(temp.corof_x, temp.corof_y["+"](.5), 0);
+                "135";
+                ring_pointer.color = color.cyan;
+                "136";
+                ring_pointer.visible = true;
+                "137";
+                (await delay(3));
+                "138";
+                return d;
+            }
+        };
+        if (!finddepth.__argnames__) Object.defineProperties(finddepth, {
+            __argnames__ : {value: ["temp", "list_texts"]},
+            __module__ : {value: null}
+        });
+
+        "140";
+        (await delay(3));
+        "141";
+        flag = true;
+        "142";
+        while (flag) {
+            "143";
+            flag1 = false;
+            "144";
+            list_texts = ρσ_list_decorate([]);
+            "145";
+            while (true) {
+                "146";
+                tins2 = ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({text: "Enter an element for which depth has to be calculated", align: "center", color: color.yellow, pos: vector(0, 8, 0)})]);
+                "147";
+                (await delay(15));
+                "148";
+                tins2.visible = false;
+                "149";
+                try {
+                    (await sleep(.1));
+                    "150";
+                    key = int(input("Enter an element for which depth has to be calculated"));
+                    "151";
+                    break;
+                    "152";
+                } catch (ρσ_Exception) {
+                    ρσ_last_exception = ρσ_Exception;
+                    {
+                        "153";
+                        tins5 = ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({text: "Enter element in proper format", align: "center", color: color.red, pos: vector(0, 8, 0)})]);
+                        "154";
+                        (await delay(15));
+                        "155";
+                        tins5.visible = false;
+                        "156";
+                        continue;
+                    }
+                }
+            }
+            "157";
+            for (var ρσ_Index3 = 0; ρσ_Index3["<"](n); ρσ_Index3++) {
+                i = ρσ_Index3;
+                "158";
+                if ((list_of_nodes[(typeof i === "number" && i["<"](0)) ? list_of_nodes.length["+"](i) : i].data === key || typeof list_of_nodes[(typeof i === "number" && i["<"](0)) ? list_of_nodes.length["+"](i) : i].data === "object" && ρσ_equals(list_of_nodes[(typeof i === "number" && i["<"](0)) ? list_of_nodes.length["+"](i) : i].data, key))) {
+                    "159";
+                    flag1 = true;
+                    "160";
+                    break;
+                    "161";
+                }
+            }
+            if (!(flag1)) {
+                "162";
+                tin4 = ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({text: "The element you entered is not in the given tree", align: "center", color: color.red, pos: vector(0, 8, 0)})]);
+                "163";
+                (await delay(15));
+                "164";
+                tin4.visible = false;
+                "165";
+                continue;
+            }
+            "166";
+            depth = (await finddepth(list_of_nodes[(typeof i === "number" && i["<"](0)) ? list_of_nodes.length["+"](i) : i], list_texts));
+            "167";
+            tins5 = ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({text: "Depth of the given node is : "["+"](depth), align: "center", color: color.cyan, pos: vector(0, 8, 0)})]);
+            "168";
+            (await delay(15));
+            "169";
+            tins5.visible = false;
+            "170";
+            ring_pointer.visible = false;
+            "171";
+            var ρσ_Iter4 = list_texts;
+            ρσ_Iter4 = ((typeof ρσ_Iter4[Symbol.iterator] === "function") ? (ρσ_Iter4 instanceof Map ? ρσ_Iter4.keys() : ρσ_Iter4) : Object.keys(ρσ_Iter4));
+            for (var ρσ_Index4 of ρσ_Iter4) {
+                i = ρσ_Index4;
+                "172";
+                i.visible = false;
+            }
+            "173";
+            tins3 = ρσ_interpolate_kwargs.call(this, text, [ρσ_desugar_kwargs({text: "Do you want to find depth of some more nodes? Then type YES else click NO", align: "center", color: color.cyan, pos: vector(0, 8, 0)})]);
+            "174";
+            (await delay(15));
+            "175";
+            tins3.visible = false;
+            (await sleep(.1));
+            "176";
+            answer = input("Do you want to find depth of some more nodes? Then type YES else click NO");
+            "177";
+            if (!((ρσ_equals((await answer.lower()), "yes")))) {
+                "178";
+                flag = false;
+            }
+        }
+        "179";
+        var ρσ_Iter5 = list_objects;
+        ρσ_Iter5 = ((typeof ρσ_Iter5[Symbol.iterator] === "function") ? (ρσ_Iter5 instanceof Map ? ρσ_Iter5.keys() : ρσ_Iter5) : Object.keys(ρσ_Iter5));
+        for (var ρσ_Index5 of ρσ_Iter5) {
+            i = ρσ_Index5;
+            "180";
+            i.visible = false;
+        }
+        "181";
+        tintro1.visible = true;
+        "182";
+        b.disabled = false;
+    };
+    if (!start_depth.__argnames__) Object.defineProperties(start_depth, {
+        __argnames__ : {value: ["b"]},
+        __module__ : {value: null}
+    });
+
+};
+if (!__main__.__module__) Object.defineProperties(__main__, {
+    __module__ : {value: null}
+});
+
+;$(function(){ window.__context = { glowscript_container: $("#glowscript").removeAttr("id") }; __main__() })})()
+// END JAVASCRIPT
+
+//--><!]]></script>
+</div>

@@ -44,7 +44,7 @@
 				</a>
 			</li>
 
-      <ul class="navbar-nav nav-right">
+		<ul class="navbar-nav nav-right">
   			<li class="nav-item mode">
   				<a class="nav-link" href="#">
   					<i class="nothing"></i>
@@ -210,16 +210,18 @@
 <img src="static/delete.png" alt="User image" class="center">
 
 <br>
-<a href="https://www.glowscript.org/#/user/aishwar18/folder/BinaryTree/program/InsertionDeletion">
-	<button class="fancy-button bg-gradient1" style="border:none; background: none;" type="submit" name="upload">
-		<span>Try it out yourself</span></button>
+<br>
+<h3>Try it yourself</h3>
+<iframe src="/v_insert" width="770" height="520" style="border:none;background:none transparent;" allowtransparency="true"></iframe>
+<br>
+<br>
+<a href="#">
+	<button class="fancy-button bg-gradient1" style="border:none; background:none;" type="submit" onClick="window.location.reload();">
+		<span>Try again</span></button>
             </a>
 
 
-
-
-
-</div>
+					</div>
 
 					<!--
           <div class="col-11 col-m-12 col-sm-12" id="publication">
@@ -246,9 +248,6 @@
 	</div>
 
         <script type = "text/javascript" src = "{{ url_for('static',filename = 'profile.js') }}" ></script>
-
-
-
 
 </body>
 </html>
