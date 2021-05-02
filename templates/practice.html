@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Insertion and Deletion</title>
+	<title>Practice Problems</title>
 
 
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
@@ -10,8 +10,7 @@
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='profile.css')}}"/>
-
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='profile.css')}}"/>
 
 </head>
 
@@ -44,7 +43,7 @@
 				</a>
 			</li>
 
-		<ul class="navbar-nav nav-right">
+      <ul class="navbar-nav nav-right">
   			<li class="nav-item mode">
   				<a class="nav-link" href="#">
   					<i class="nothing"></i>
@@ -87,7 +86,7 @@
 				</a>
 			</li>
 			<li class="sidebar-nav-item">
-				<a href="/properties" class="sidebar-nav-link">
+				<a href="/properties" class="sidebar-nav-link active">
 					<div>
 						<i class="fa fa-gear"></i>
 					</div>
@@ -103,7 +102,7 @@
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="/insert" class="sidebar-nav-link active">
+				<a href="/insert" class="sidebar-nav-link">
 					<div>
 						<i class="fa fa-random"></i>
 					</div>
@@ -111,7 +110,7 @@
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="/depth" class="sidebar-nav-link">
+				<a href="/depth" class="sidebar-nav-link ">
 					<div>
 						<i class="fa fa-sort-amount-desc"></i>
 					</div>
@@ -127,13 +126,13 @@
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="/practice" class="sidebar-nav-link">
+				<a href="/practice" class="sidebar-nav-link active">
 					<div>
 						<i class="fa fa-question-circle"></i>
 					</div>
 					<span class='span'>Practice Problems</span>
 				</a>
-			</li>-->
+			</li>
 		</ul>
 	</div>
 
@@ -145,89 +144,20 @@
 				<div class="card">
 					<div class="card-header">
 						<h1 style="font-size:2.5rem;">
-							Insertion and Deletion in a Binary Tree
+							Practice Problems on binary tree
 						</h1>
           <!--  <i><a href="#" class="fancy-button bg-gradient1"><span>Edit Profile</span></a></i>-->
  </div>
+<div class="card-content">
 
-
-
-					<div class="card-content">
-						<br>
-						<h3 style="font-size:2rem;">Insertion</h3>
-
-<p><i>For inserting a node in a binary tree you will have to check the following conditions:</i><p>
-<ul>
-
-<li>If a node in the binary tree does not have its left child, then insert the given node(the one that we have to insert) as its left child.
-
-<li>If a node in the binary tree does not have its right child then insert the given node as its right child.
-
-<li>If the above-given conditions do not apply then search for the node which does not have a child at all and insert the given node there.
-
-<li>We can use a queue for implementation of this algorithm, as it is easy to store and retrieve the nodes of the binary tree that way because queue follows the FIFO rule. Also, most of the tree algorithms are implemented using a queue.
-</ul>
-<br>
-<h3> Algorithm</h3>
-<article>
-<b>Insert (Tree, item):</b><br><br>
-<b>Step 1:</b><br>IF (Tree = null):
-   <p>SET Tree -> data = item</p>
-  <p>SET Tree -> left = Tree -> right = null</p>
-  <p>ELSE</p>
-   <p>if item in Tree -> data</p>
-    <p>Insert(Tree -> left, item)</p>
-  <p>ELSE</p>
-   <p>Insert(Tree -> right, item)<br><br></p>
-<b>Step 2:</b> END<br>
-</article>
-<br>
-<h3>Example</h3>
-<img src="static/insert.png" alt="User image" class="center" style="height:600px;width:900px;">
-
-<br>
-
-						<a href="https://www.glowscript.org/#/user/sivasininetrasa/folder/MyPrograms/program/binarytree">
-	<button class="fancy-button bg-gradient1" style="border:none; background: none;" type="submit" name="upload">
-		<span>View Animation</span></button>
-            </a>
-						<br>
-
-<h3 style="font-size:2rem;">Deletion</h3>
-<p>Given a binary tree, delete a node from it by making sure that tree
-	shrinks from the bottom (i.e. the deleted node is replaced by bottom
-	 most and rightmost node). Here we do not have any order among elements,
-	  so we replace with last element.</p>
-<br>
-<h3>Algorithm</h3>
-<ol>
-<li>Starting at root, find the deepest and rightmost node in binary tree and node which we want to delete.
-<li>Replace the deepest rightmost node’s data with node to be deleted.
-<li>Then delete the deepest rightmost node.
-</ol>
-<br>
-<h3>Example</h3>
-<img src="static/delete.png" alt="User image" class="center">
-
-<br>
-<br>
-<h3>Try it yourself</h3>
-<iframe src="/v_insert" width="900" height="700" style="border:none;background:none transparent;" allowtransparency="true"></iframe>
-<br>
-<br>
-<a href="#">
-	<button class="fancy-button bg-gradient1" style="border:none; background:none;" type="submit" onClick="window.location.reload();">
-		<span>Try again</span></button>
-            </a>
-
-
-					</div>
+</div>
 
 			</div>
 		</div>
 	</div>
+<script type = "text/javascript" src = "{{ url_for('static',filename = 'profile.js') }}" ></script>
 
-        <script type = "text/javascript" src = "{{ url_for('static',filename = 'profile.js') }}" ></script>
+
 
 </body>
 </html>

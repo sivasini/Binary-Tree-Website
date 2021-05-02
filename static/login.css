@@ -18,7 +18,7 @@ body {
     padding: 0;
 }
 
-h1, h3, p {
+h1, h3, p,ul {
     margin: 0;
 }
 
@@ -48,7 +48,7 @@ section {
     padding-bottom: 20px;
 }
 
-.login-form p {
+.login-form p, .login-form ul {
     font-size: 1.8rem;
 }
 
@@ -157,7 +157,8 @@ input[type=submit]:hover {
     }
 
     .login-img h1,
-    .login-img p {
+    .login-img p,
+     .login-img ul{
         width: 300px;
     }
 
@@ -166,7 +167,8 @@ input[type=submit]:hover {
         font-size: 3.5rem;
     }
 
-    .login-img p {
+    .login-img p,
+    .login-img ul{
         color: #bebebe;
         line-height: 1.5;
     }

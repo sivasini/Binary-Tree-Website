@@ -5,12 +5,12 @@ import urllib.request
 from bs4 import BeautifulSoup
 
 
-def scrap_images(image_url,filename):
+def scrap_images(image_url, filename):
     opener = urllib.request.build_opener()
     opener.addheaders = [('User-Agent','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36')]
     urllib.request.install_opener(opener)
     urllib.request.urlretrieve(image_url, filename)
-    print("Succefully extracted",filename)
+    print("Successfully extracted", filename)
 
 
 scrap_images("https://res.cloudinary.com/practicaldev/image/fetch/s--od-naD9n--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://miro.medium.com/max/975/1%2APWJiwTxRdQy8A_Y0hAv5Eg.png", 'static/bt1.png')
@@ -92,6 +92,10 @@ def types():
 @app.route('/depth')
 def depth():
     return render_template("depth.html", user=session['username'])
+
+@app.route('/practice')
+def practice():
+    return render_template("practice.html", user=session['username'])
 
 
 @app.route('/v_insert')
