@@ -1,1 +1,1 @@
-Various functionalities of binary tree are animated using Vpython package and a detailed website to learn about the data structure - Binary tree is implemented using Flask.
+Various functionalities of binary tree are animated using Vpython package and a detailed website to learn about the data structure - Binary tree is implemented using Flask. Web scrapping using beautiful soup and image scrapping using urllib is implemented.
