@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Applications</title>
+
+
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='profile.css')}}"/>
+
+</head>
+
+
+<body class="overlay-scrollbar">
+
+	<!-- navbar -->
+	<div class="navbar">
+		<!-- nav left -->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link">
+					<i class="fa fa-bars" onclick="collapseSidebar()"></i>
+				</a>
+			</li>
+			<li class="nav-item faculty">
+				<b><!--username-->{{ session['username'] }}</b>
+			</li>
+		</ul>
+
+		<form class="navbar-search">
+			<input type="text" name="Search" class="navbar-search-input" placeholder="Search..">
+			<i class="fa fa-search"></i>
+		</form>
+
+		<ul class="navbar-nav nav-right">
+			<li class="nav-item mode">
+				<a class="nav-link" href="#" onclick="switchTheme()">
+					<i class="fa fa-moon-o dark"></i>
+				</a>
+			</li>
+
+      <ul class="navbar-nav nav-right">
+  			<li class="nav-item mode">
+  				<a class="nav-link" href="#">
+  					<i class="nothing"></i>
+  				</a>
+  			</li>
+
+
+			<li class="nav-item">
+			<li class="nav-item avt-wrapper">
+				<div class="avt dropdown">
+
+          <img src="static/logo.png" alt="User image" class="dropdown-toggle" data-toggle="user-menu">
+					<ul id="user-menu" class="dropdown-menu">
+						<li  class="dropdown-menu-item">
+							<a href="/logout" class="dropdown-menu-link">
+								<div>
+									<i class="fa fa-sign-out"></i>
+								</div>
+								<span>Logout</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<!-- end nav right -->
+	</div>
+	<!-- end navbar -->
+	<!-- sidebar -->
+	<div class="sidebar">
+		<ul class="sidebar-nav">
+			<li class="sidebar-nav-item">
+				<a href="/tree" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-tree"></i>
+					</div>
+					<span class='span'>
+						Binary Tree
+					</span>
+				</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a href="/properties" class="sidebar-nav-link active">
+					<div>
+						<i class="fa fa-gear"></i>
+					</div>
+					<span class='span'>Application</span>
+				</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a href="/types" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-sort"></i>
+					</div>
+					<span class='span'>Types</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="/insert" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-random"></i>
+					</div>
+					<span class='span'>Insert & Delete</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="/depth" class="sidebar-nav-link ">
+					<div>
+						<i class="fa fa-sort-amount-desc"></i>
+					</div>
+					<span class='span'>Height and Depth</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="/traversal" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-tasks"></i>
+					</div>
+					<span class='span'>Traversal</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="/practice" class="sidebar-nav-link ">
+					<div>
+						<i class="fa fa-question-circle"></i>
+					</div>
+					<span class='span'>Practice Problems</span>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+
+	<div class="wrapper">
+
+		<div class="row">
+
+			<div class="col-10 col-m-12 col-sm-12">
+				<div class="card">
+					<div class="card-header">
+						<h1 style="font-size:2.5rem;">
+							Applications of Binary Tree
+						</h1>
+ </div>
+
+
+
+					<div class="card-content">
+						<br>
+						<h3>Main applications of trees include: </h3>
+<ul>
+	<li> Manipulate hierarchical data.
+<li>  Make information easy to search (see tree traversal).
+<li>  Manipulate sorted lists of data.
+<li> As a workflow for compositing digital images for visual effects.
+<li> Router algorithms
+<li> Form of a multi-stage decision-making (see business chess).
+	<li> Others are briefed below...
+</ul><br>
+					<h3>1.Morse Code Generation </h3>
+                        <p>{{ article }}</p>
+                        <p>Morse code is a method used in telecommunication to encode text characters as standardized sequences of two different signal durations, called dots and dashes (or dits and dahs). Morse code is named after Samuel Morse, an inventor of the telegraph.</p>
+                        <p>International Morse Code, also known as Continental Morse Code,[4] encodes the 26 English letters A through Z, some non-English letters, the Arabic numerals an d a small set of punctuation and procedural signals (prosigns). There is no distinction between upper and lower case letters.[1] Each Morse code symbol is formed by a sequence of dots and dashes. The dot duration is the basic unit of time measurement in Morse code transmission. The duration of a dash is three times the duration of a dot. Each dot or dash within a character is followed by a period of signal absence, called a space, equal to the dot duration. The letters of a word are separated by a space of duration equal to three dots, and words are separated by a space equal to seven dots</p>
+		                <img src="static/morsecode1.svg" alt="User image" class="center" style="height:500px;width:800px;">
+                        <p>To us normal people, Morse code sounds uninteresting — even irritating, perhaps. But the fact is, since its inception almost 200 years ago, Morse code has been used by countless sailors, pilots, and communication specialists to send messages over very simple transmitters.
+                             The way Morse code works is each letter of the alphabet is represented as a combination of “dots” and “dashes”. For example, the letter A is “.-“ The letter R is “.-.”
+                            Now, before you go memorizing the dots and dashes of all 26 letters, as it turns out, there is a method to this madness.</p>
+                       <p>If you think about it, if we simply had a list containing each letter and its Morse code representation, we would have something like this:</p>
+		                <img src="static/morsecode2.jpg" alt="User image" class="center" style="height:500px;width:800px;">
+
+                        <h3>2.Binary Fractal Trees </h3>
+                        <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=gif/path/sbaefc454c475f4e6/image/i071afc3bcd8c9e3a/version/1510672986/image.gif"  alt="User image" class="center">
+
+<p>A binary fractal tree is defined recursively by symmetric binary branching. The trunk of length 1 splits into two branches of length r,
+    each making an angle q with the direction of the trunk. Both of these branches divides into
+    two branches of length r2, each making an angle q with the direction of its parent branch.
+    Continuing in this way for infinitely many branchings, the tree is the set of branches,
+    together with their limit points, called branch tips.</p>
+
+<p>In the obvious way, each branch is determined by a string of symbols L and R specifying the
+    choice of direction taken along the tree to reach the branch. A branch determined by a string of
+    n symbols has length rn; a branch tip is determined by an infinite string of symbols. Most of the
+    analysis in [FT] results from converting eventually periodic symbol strings of branch tips into
+    geometric series for the x and y coordinates of the branch tips, and making appropriate interpretations.</p>
+
+                        <h3>2.2 Usage of Fractal Trees: Airport Problem</h3>
+		               <img src="static/fractal.gif" alt="User image" class="center" style="height:500px;width:800px;">
+
+<p>Let's imagine a problem: you are in charge of building an airport runway scheduling system.
+    Let's say that today you have 3 take-offs and 3 landings scheduled, but now another airline
+    wants to see if they can schedule a take-off today as well. How could we handle this new request
+    such that it isn't too big a deal?</p>
+		               <img src="static/fractal3.gif" alt="User image" class="center" style="height:500px;width:800px;">
+
+<p>Well, we could store our take-offs and landings in an array in order. But now we have this new request
+    for a take-off that happens to be in the middle of our take-offs and landings. Without even checking to
+    see if it would overlap with another flight, we could insert it into our array in an O(1), constant
+    operation and then resort the entire thing. With a quicksort or a mergesort, this could be done in
+    (an average of) O(nlogn) time, but this doesn't seem ideal.</p>
+		<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a7c43e11-f159-4cff-b624-e6ed82abea80/d1zd84m-b5c0dfd7-fa35-44f0-9ae5-f09b4e1320a7.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9hN2M0M2UxMS1mMTU5LTRjZmYtYjYyNC1lNmVkODJhYmVhODAvZDF6ZDg0bS1iNWMwZGZkNy1mYTM1LTQ0ZjAtOWFlNS1mMDliNGUxMzIwYTcuZ2lmIn1dXX0.7ajYNSqWT8uzCIaI2DMVP6lVGj9dD1p-qmm5SmRUxf8" alt="User image" class="center" >
+
+<p>Let's say the example above represents our flight system in military time. We have flights scheduled at 8 am,
+                        3am, 10am, and so on. Now let's say we want to add in a take-off an 9am. To do this
+                        we start at the first node and look at the value -- 8am. Because 9am is later than
+                        8am, we go to the right. If we were booking an earlier take-off, we would go to the
+                        left. Because we have gone to the right, the next node is 10am. We ask the same question
+                        again: is 9am earlier or later than 10am? Because it's earlier, we go to the left and
+                        check if there is a node. No node, so we can go ahead and insert 9am as a new node
+                        to the left of 10am. Insertion in a binary tree is an O(1) problem, compared to the
+    array, which was O(n). Phew, that's a lot better!</p>
+
+<p>The minimum height for a binary tree of n nodes is log2n. In the case of 1 million scheduled flights,
+    to find the insertion point, we'd be looking at a difference of O(1 million) if the tree is in order and
+    O(19) if the tree is "balanced". We can see that there would be a huge difference in effiency between an
+    ordered binary tree -- essentially now a linked list -- and a so-called balanced binary tree. To get a
+    balanced binary tree, we have to ensure that our data gets added in randomized order. If that isn't
+    possible, then you have to perform certain operations at key times to keep the tree balanced.</p>
+
+                        <h3>3.Binary Tree Search </h3>
+		                <img src="static/bst1.gif" alt="User image" class="center" style="height:500px;width:800px;">
+<p>In computer science, a binary search tree (BST), also called an ordered or sorted binary tree,
+    is a rooted binary tree whose internal nodes each store a key greater than all the keys in the node's
+    left subtree and less than those in its right subtree. A binary tree is a type of data structure for
+    storing data such as numbers in an organized way. Binary search trees allow binary search for fast lookup,
+    addition and removal of data items, and can be used to implement dynamic sets and lookup tables. The order
+    of nodes in a BST means that each comparison skips about half of the remaining tree, so the whole lookup
+    takes time proportional to the binary logarithm of the number of items stored in the tree</p>
+
+						<iframe src="/v_bst" width="900" height="700"style="border:none;background:none transparent;" allowtransparency="true"></iframe>
+</div>
+
+
+			</div>
+		</div>
+	</div>
+        <script type = "text/javascript" src = "{{ url_for('static',filename = 'profile.js') }}" ></script>
+
+
+
+
+</body>

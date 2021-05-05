@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice Problems</title>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='profile.css')}}"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+</head>
+
+<body class="overlay-scrollbar">
+
+	<!-- navbar -->
+	<div class="navbar">
+		<!-- nav left -->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link">
+					<i class="fa fa-bars" onclick="collapseSidebar()"></i>
+				</a>
+			</li>
+			<li class="nav-item faculty">
+				<b><!--username-->{{ session['username'] }}</b>
+			</li>
+		</ul>
+
+		<form class="navbar-search">
+			<input type="text" name="Search" class="navbar-search-input" placeholder="Search..">
+			<i class="fa fa-search"></i>
+		</form>
+
+		<ul class="navbar-nav nav-right">
+			<li class="nav-item mode">
+				<a class="nav-link" href="#" onclick="switchTheme()">
+					<i class="fa fa-moon-o dark"></i>
+				</a>
+			</li>
+
+      <ul class="navbar-nav nav-right">
+  			<li class="nav-item mode">
+  				<a class="nav-link" href="#">
+  					<i class="nothing"></i>
+  				</a>
+  			</li>
+
+
+			<li class="nav-item">
+			<li class="nav-item avt-wrapper">
+				<div class="avt dropdown">
+
+          <img src="static/logo.png" alt="User image" class="dropdown-toggle" data-toggle="user-menu">
+					<ul id="user-menu" class="dropdown-menu">
+						<li  class="dropdown-menu-item">
+							<a href="/logout" class="dropdown-menu-link">
+								<div>
+									<i class="fa fa-sign-out"></i>
+								</div>
+								<span>Logout</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<!-- end nav right -->
+	</div>
+	<!-- end navbar -->
+	<!-- sidebar -->
+	<div class="sidebar">
+		<ul class="sidebar-nav">
+			<li class="sidebar-nav-item">
+				<a href="/tree" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-tree"></i>
+					</div>
+					<span class='span'>
+						Binary Tree
+					</span>
+				</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a href="/properties" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-gear"></i>
+					</div>
+					<span class='span'>Applicaiton</span>
+				</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a href="/types" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-sort"></i>
+					</div>
+					<span class='span'>Types</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="/insert" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-random"></i>
+					</div>
+					<span class='span'>Insert & Delete</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="/depth" class="sidebar-nav-link ">
+					<div>
+						<i class="fa fa-sort-amount-desc"></i>
+					</div>
+					<span class='span'>Height and Depth</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="/traversal" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-tasks"></i>
+					</div>
+					<span class='span'>Traversal</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="/practice" class="sidebar-nav-link active">
+					<div>
+						<i class="fa fa-question-circle"></i>
+					</div>
+					<span class='span'>Practice Problems</span>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+
+	<div class="wrapper">
+
+		<div class="row">
+
+			<div class="col-10 col-m-12 col-sm-12">
+				<div class="card">
+					<div class="card-header">
+						<h1 style="font-size:2.5rem;">
+							Practice Problems on binary tree
+						</h1>
+          <!--  <i><a href="#" class="fancy-button bg-gradient1"><span>Edit Profile</span></a></i>-->
+ </div>
+<div class="card-content">
+<br>
+	<iframe width="1180" height="600" src="https://www.youtube.com/embed/{{video}}" title="YouTube video player"
+			frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen></iframe>
+	<div class="col-11 col-m-12 col-sm-12" id="publication">
+				<div class="card">
+						<div class="card-header">
+
+							<!--
+<ol>
+                {% for i in range(0,93):%}
+	<li><a href={{url[i]}}>{{name[i]}}</a></li>
+
+	 {% endfor %}
+</ol>-->
+<div align="center">
+<button class="fancy-button bg-gradient1" style="border:none; background:none;" type="button" name="load_data_easy" id="load_data_easy">
+		<span>Easy</span></button>
+
+<button class="fancy-button bg-gradient1" style="border:none; background:none;" type="button" name="load_data_medium" id="load_data_medium">
+		<span>Medium</span></button>
+
+<button class="fancy-button bg-gradient1" style="border:none; background:none;" type="button" name="load_data_hard" id="load_data_hard">
+		<span>Hard</span></button>
+
+<!--<button type="button" name="load_data_easy" id="load_data_easy" class="w3-button w3-purple w3-round"> Easy Problems</button>
+<button type="button" name="load_data_medium" id="load_data_medium" class="w3-button w3-purple w3-round">Medium Problems</button>
+<button type="button" name="load_data_hard" id="load_data_hard" class="w3-button w3-purple w3-round">Hard Problems</button>-->
+</div>
+<h3>Problems</h3>
+    <div id="employee_table">
+    </div>
+                          </div>
+                </div>
+    </div>
+
+
+    </div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<script type = "text/javascript" src = "{{ url_for('static',filename = 'profile.js') }}" ></script>
+
+
+<script>
+$(document).ready(function(){
+ $('#load_data_easy').click(function(){
+  $.ajax({
+   url:"static/fileone.csv",
+   dataType:"text",
+   success:function(data)
+   {
+    var employee_data = data.split(/\r?\n|\r/);
+    var table_data = '<table class="card">';
+
+    for(var count = 0; count<=19; count++)
+    {
+     var cell_data = employee_data[count].split(",");
+     table_data += '<tr>';
+
+      if(count == 0)
+      {
+       //table_data += '<th>'+cell_data[1]+'</th>';
+      }
+     else
+      {    table_data += '<td><a href="'+cell_data[0]+'">'+cell_data[1]+'</a></td>';
+           //table_data += '<td>'+cell_data[cell_count]+'</td>';
+
+          //<td><a href="mylink.html" target="_top">link</a></td>
+
+         //var k= '<a href=cell_data[0]>$cell_data[1]</a>';
+
+       //table_data += k;
+      }
+
+     table_data += '</tr>';
+    }
+    table_data += '</table>';
+    $('#employee_table').html(table_data);
+   }
+  });
+ });
+$('#load_data_medium').click(function(){
+  $.ajax({
+   url:"static/fileone.csv",
+   dataType:"text",
+   success:function(data)
+   {
+    var employee_data = data.split(/\r?\n|\r/);
+    var table_data = '<table class="card">';
+    for(var count = 20; count<50; count++)
+    {
+     var cell_data = employee_data[count].split(",");
+     table_data += '<tr>';
+
+      if(count == 0)
+      {
+       table_data += '<th>'+cell_data[1]+'</th>';
+      }
+     else
+      {    table_data += '<td><a href="'+cell_data[0]+'">'+cell_data[1]+'</a></td>';
+           //table_data += '<td>'+cell_data[cell_count]+'</td>';
+
+          //<td><a href="mylink.html" target="_top">link</a></td>
+
+         //var k= '<a href=cell_data[0]>$cell_data[1]</a>';
+
+       //table_data += k;
+      }
+
+     table_data += '</tr>';
+    }
+    table_data += '</table>';
+    $('#employee_table').html(table_data);
+   }
+  });
+ });
+$('#load_data_hard').click(function(){
+  $.ajax({
+   url:"static/fileone.csv",
+   dataType:"text",
+   success:function(data)
+   {
+    var employee_data = data.split(/\r?\n|\r/);
+    var table_data = '<table class="card">';
+    for(var count = 50; count<employee_data.length-1; count++)
+    {
+     var cell_data = employee_data[count].split(",");
+     table_data += '<tr>';
+
+      if(count == 0)
+      {
+       table_data += '<th>'+cell_data[1]+'</th>';
+      }
+     else
+      {    table_data += '<td><a href="'+cell_data[0]+'">'+cell_data[1]+'</a></td>';
+           //table_data += '<td>'+cell_data[cell_count]+'</td>';
+
+          //<td><a href="mylink.html" target="_top">link</a></td>
+
+         //var k= '<a href=cell_data[0]>$cell_data[1]</a>';
+
+       //table_data += k;
+      }
+
+     table_data += '</tr>';
+    }
+    table_data += '</table>';
+    $('#employee_table').html(table_data);
+   }
+  });
+ });
+});
+</script>
+
+
+</body>
+</html>

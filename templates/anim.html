@@ -1,0 +1,684 @@
+<div id="glowscript" class="glowscript">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" href="https://www.glowscript.org/css/redmond/2.1/jquery-ui.custom.css" rel="stylesheet" />
+<link type="text/css" href="https://www.glowscript.org/css/ide.css" rel="stylesheet" />
+<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery-ui.custom.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/package/glow.3.0.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/package/RSrun.3.0.min.js"></script>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+
+// START JAVASCRIPT
+;(function() {;
+async function __main__() {
+"use strict";
+
+    var version, display, vector, print, arange, __name__, type, scene, RS_ls, c1, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, b1, x1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, t1, t2, ball1, dele9, dele4, dele2, b;
+    version = RS_list_decorate([ "3.0", "glowscript" ]);
+    Array.prototype['+'] = function(r) {return this.concat(r)}
+    Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
+    window.__GSlang = "vpython";
+    display = canvas;
+    vector = vec;
+    print = GSprint;
+    arange = range;
+    __name__ = "__main__";
+    type = pytype;
+    scene = canvas();
+    fontloading();
+    await waitforfonts();
+    "4";
+    c1 = RS_interpolate_kwargs.call(this, canvas, [RS_desugar_kwargs({width: 1100, height: 600, center: vector(0, 0, 0), background: color.black})]);
+    "6";
+    a1 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({canvas: c1, pos: vector(15["-u"](), 3.5, 0), color: color.orange, size: .6["*"](vector(3, 2, 1)), axis: vector(0, 1["-u"](), 0), length: 3})]);
+    "7";
+    a2 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({canvas: c1, pos: vector(15["-u"](), 3.5, 0), color: color.orange, size: .6["*"](vector(3, 2, 1)), axis: vector(0, 1["-u"](), 0), length: 3})]);
+    "8";
+    a3 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({canvas: c1, pos: vector(15["-u"](), 3.5, 0), color: color.orange, size: .6["*"](vector(3, 2, 1)), axis: vector(0, 1["-u"](), 0), length: 3})]);
+    "9";
+    a4 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({canvas: c1, pos: vector(15["-u"](), 3.5, 0), color: color.orange, size: .6["*"](vector(3, 2, 1)), axis: vector(0, 1["-u"](), 0), length: 3})]);
+    "10";
+    a5 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({canvas: c1, pos: vector(15["-u"](), 3.5, 0), color: color.orange, size: .6["*"](vector(3, 2, 1)), axis: vector(0, 1["-u"](), 0), length: 3})]);
+    "11";
+    a6 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({canvas: c1, pos: vector(15["-u"](), 3.5, 0), color: color.orange, size: .6["*"](vector(3, 2, 1)), axis: vector(0, 1["-u"](), 0), length: 3})]);
+    "12";
+    a7 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({canvas: c1, pos: vector(15["-u"](), 3.5, 0), color: color.orange, size: .6["*"](vector(3, 2, 1)), axis: vector(0, 1["-u"](), 0), length: 3})]);
+    "13";
+    a8 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({canvas: c1, pos: vector(15["-u"](), 3.5, 0), color: color.orange, size: .6["*"](vector(3, 2, 1)), axis: vector(0, 1["-u"](), 0), length: 3})]);
+    "14";
+    a9 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({canvas: c1, pos: vector(15["-u"](), 3.5, 0), color: color.orange, size: .6["*"](vector(3, 2, 1)), axis: vector(0, 1["-u"](), 0), length: 3})]);
+    "15";
+    a10 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({canvas: c1, pos: vector(15["-u"](), 3.5, 0), color: color.orange, size: .6["*"](vector(3, 2, 1)), axis: vector(0, 1["-u"](), 0), length: 3})]);
+    "16";
+    a11 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({canvas: c1, pos: vector(15["-u"](), 3.5, 0), color: color.orange, size: .6["*"](vector(3, 2, 1)), axis: vector(0, 1["-u"](), 0), length: 3})]);
+    "20";
+    b1 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({canvas: c1, pos: vector(9["-u"](), 7["-u"](), 0), color: color.blue, radius: .5})]);
+    "21";
+    x1 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({canvas: c1, text: "0", pos: vector(9.2["-u"](), 8.5["-u"](), 0), color: color.red})]);
+    "22";
+    x1.length = .5["*"](x1.length);
+    "23";
+    x1.height = .5["*"](x1.height);
+    "24";
+    x1.depth = .1["*"](x1.depth);
+    "26";
+    b2 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({canvas: c1, pos: vector(7["-u"](), 7["-u"](), 0), color: color.white, radius: .5})]);
+    "27";
+    x1 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({canvas: c1, text: "1", pos: vector(7.2["-u"](), 8.5["-u"](), 0), color: color.red})]);
+    "28";
+    x1.length = .5["*"](x1.length);
+    "29";
+    x1.height = .5["*"](x1.height);
+    "30";
+    x1.depth = .1["*"](x1.depth);
+    "32";
+    b3 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({canvas: c1, pos: vector(5["-u"](), 7["-u"](), 0), color: color.green, radius: .5})]);
+    "33";
+    x1 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({canvas: c1, text: "2", pos: vector(5.2["-u"](), 8.5["-u"](), 0), color: color.red})]);
+    "34";
+    x1.length = .5["*"](x1.length);
+    "35";
+    x1.height = .5["*"](x1.height);
+    "36";
+    x1.depth = .1["*"](x1.depth);
+    "38";
+    b4 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({canvas: c1, pos: vector(3["-u"](), 7["-u"](), 0), color: color.yellow, radius: .5})]);
+    "39";
+    x1 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({canvas: c1, text: "3", pos: vector(3.2["-u"](), 8.5["-u"](), 0), color: color.red})]);
+    "40";
+    x1.length = .5["*"](x1.length);
+    "41";
+    x1.height = .5["*"](x1.height);
+    "42";
+    x1.depth = .1["*"](x1.depth);
+    "44";
+    b5 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({canvas: c1, pos: vector(1["-u"](), 7["-u"](), 0), color: color.cyan, radius: .5})]);
+    "45";
+    x1 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({canvas: c1, text: "4", pos: vector(1.2["-u"](), 8.5["-u"](), 0), color: color.red})]);
+    "46";
+    x1.length = .5["*"](x1.length);
+    "47";
+    x1.height = .5["*"](x1.height);
+    "48";
+    x1.depth = .1["*"](x1.depth);
+    "50";
+    b6 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({canvas: c1, pos: vector(1, 7["-u"](), 0), color: color.magenta, radius: .5})]);
+    "51";
+    x1 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({canvas: c1, text: "5", pos: vector(.8, 8.5["-u"](), 0), color: color.red})]);
+    "52";
+    x1.length = .5["*"](x1.length);
+    "53";
+    x1.height = .5["*"](x1.height);
+    "54";
+    x1.depth = .1["*"](x1.depth);
+    "56";
+    b7 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({canvas: c1, pos: vector(3, 7["-u"](), 0), color: color.purple, radius: .5})]);
+    "57";
+    x1 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({canvas: c1, text: "6", pos: vector(2.8, 8.5["-u"](), 0), color: color.red})]);
+    "58";
+    x1.length = .5["*"](x1.length);
+    "59";
+    x1.height = .5["*"](x1.height);
+    "60";
+    x1.depth = .1["*"](x1.depth);
+    "62";
+    b8 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({canvas: c1, pos: vector(5, 7["-u"](), 0), color: color.red, opacity: .5, radius: .5})]);
+    "63";
+    x1 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({canvas: c1, text: "7", pos: vector(4.8, 8.5["-u"](), 0), color: color.red})]);
+    "64";
+    x1.length = .5["*"](x1.length);
+    "65";
+    x1.height = .5["*"](x1.height);
+    "66";
+    x1.depth = .1["*"](x1.depth);
+    "68";
+    b9 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({canvas: c1, pos: vector(7, 7["-u"](), 0), color: color.orange, opacity: .5, radius: .5})]);
+    "69";
+    x1 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({canvas: c1, text: "8", pos: vector(6.8, 8.5["-u"](), 0), color: color.red})]);
+    "70";
+    x1.length = .5["*"](x1.length);
+    "71";
+    x1.height = .5["*"](x1.height);
+    "72";
+    x1.depth = .1["*"](x1.depth);
+    "74";
+    b10 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({canvas: c1, pos: vector(9, 7["-u"](), 0), color: color.magenta, opacity: .5, radius: .5})]);
+    "75";
+    x1 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({canvas: c1, text: "9", pos: vector(8.8, 8.5["-u"](), 0), color: color.red})]);
+    "76";
+    x1.length = .5["*"](x1.length);
+    "77";
+    x1.height = .5["*"](x1.height);
+    "78";
+    x1.depth = .1["*"](x1.depth);
+    "80";
+    b11 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({canvas: c1, pos: vector(11, 7["-u"](), 0), color: color.red, radius: .5})]);
+    "81";
+    x1 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({canvas: c1, text: "10", pos: vector(10.8, 8.5["-u"](), 0), color: color.red})]);
+    "82";
+    x1.length = .5["*"](x1.length);
+    "83";
+    x1.height = .5["*"](x1.height);
+    "84";
+    x1.depth = .1["*"](x1.depth);
+    "88";
+    t1 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({canvas: c1, text: "Insertion and deletion in a binary tree", pos: vector(8["-u"](), 7, 0), color: color.red})]);
+    "89";
+    t1.length = 1["*"](t1.length);
+    "90";
+    t1.height = 1["*"](t1.height);
+    "91";
+    t1.depth = .1["*"](t1.depth);
+    "93";
+    t2 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({canvas: c1, text: "Array[  ]=", pos: vector(13["-u"](), 7.2["-u"](), 0), color: color.red})]);
+    "94";
+    t2.length = .6["*"](t2.length);
+    "95";
+    t2.height = .6["*"](t2.height);
+    "96";
+    t2.depth = .1["*"](t2.depth);
+    "102";
+    async function pro(ball1) {
+        var RS_ls, k1, dt, k2, k3;
+        "103";
+        k1 = 1;
+        "104";
+        dt = .2;
+        "105";
+        while (k1["<"](100)) {
+            "106";
+            if (b1.pos.x["<"](0)) {
+                "107";
+                (await rate(30));
+                "108";
+                b1.pos.x = b1.pos.x["+"](dt);
+                "110";
+            }
+            if (b1.pos.y["<"](5)) {
+                "111";
+                (await rate(40));
+                "112";
+                b1.pos.y = b1.pos.y["+"](dt);
+            }
+            "113";
+            k1 = k1["+"](1);
+        }
+        "120";
+        k2 = 1;
+        "121";
+        a1.pos = vector(0, 5, 0);
+        "122";
+        a1.axis = vector(1.5["-u"](), 1["-u"](), 0);
+        "123";
+        a1.length = 3;
+        "124";
+        while (k2["<"](100)) {
+            "125";
+            if (b2.pos.x["<"](2.9["-u"]())) {
+                "126";
+                (await rate(30));
+                "127";
+                b2.pos.x = b2.pos.x["+"](dt);
+                "129";
+            }
+            if (b2.pos.y["<"](3.2)) {
+                "130";
+                (await rate(40));
+                "131";
+                b2.pos.y = b2.pos.y["+"](dt);
+            }
+            "132";
+            k2 = k2["+"](1);
+        }
+        "137";
+        k3 = 1;
+        "138";
+        a2.pos = vector(0, 5, 0);
+        "139";
+        a2.axis = vector(1.5, 1["-u"](), 0);
+        "140";
+        a2.length = 3;
+        "141";
+        while (k3["<"](100)) {
+            "142";
+            if (b3.pos.x["<"](2.8)) {
+                "143";
+                (await rate(30));
+                "144";
+                b3.pos.x = b3.pos.x["+"](dt);
+                "146";
+            }
+            if (b3.pos.y["<"](3.2)) {
+                "147";
+                (await rate(40));
+                "148";
+                b3.pos.y = b3.pos.y["+"](dt);
+            }
+            "149";
+            k3 = k3["+"](1);
+        }
+        "153";
+        k3 = 1;
+        "154";
+        dt = .1;
+        "155";
+        a3.pos = vector(2.9["-u"](), 3.2, 0);
+        "156";
+        a3.axis = vector(1["-u"](), 1["-u"](), 0);
+        "157";
+        a3.length = 3;
+        "158";
+        while (k3["<"](100)) {
+            "159";
+            if (b4.pos.x[">"](5.2["-u"]())) {
+                "160";
+                (await rate(30));
+                "161";
+                b4.pos.x = b4.pos.x["-"](dt);
+                "163";
+            }
+            if (b4.pos.y["<"](.6)) {
+                "164";
+                (await rate(40));
+                "165";
+                b4.pos.y = b4.pos.y["+"](dt);
+            }
+            "166";
+            k3 = k3["+"](1);
+        }
+        "169";
+        k3 = 1;
+        "170";
+        dt = .1;
+        "171";
+        a4.pos = vector(2.9["-u"](), 3.2, 0);
+        "172";
+        a4.axis = vector(1, 1["-u"](), 0);
+        "173";
+        a4.length = 3;
+        "174";
+        while (k3["<"](100)) {
+            "175";
+            if (b5.pos.x[">"](.7["-u"]())) {
+                "176";
+                (await rate(30));
+                "177";
+                b5.pos.x = b5.pos.x["-"](dt);
+                "179";
+            }
+            if (b5.pos.y["<"](.6)) {
+                "180";
+                (await rate(40));
+                "181";
+                b5.pos.y = b5.pos.y["+"](dt);
+            }
+            "182";
+            k3 = k3["+"](1);
+        }
+        "185";
+        k3 = 1;
+        "186";
+        dt = .1;
+        "187";
+        a5.pos = vector(2.8, 3.2, 0);
+        "188";
+        a5.axis = vector(1["-u"](), 1["-u"](), 0);
+        "189";
+        a5.length = 3;
+        "190";
+        while (k3["<"](100)) {
+            "191";
+            if (b6.pos.x[">"](.5)) {
+                "192";
+                (await rate(30));
+                "193";
+                b6.pos.x = b6.pos.x["-"](dt);
+                "195";
+            }
+            if (b6.pos.y["<"](.6)) {
+                "196";
+                (await rate(40));
+                "197";
+                b6.pos.y = b6.pos.y["+"](dt);
+            }
+            "198";
+            k3 = k3["+"](1);
+        }
+        "201";
+        k3 = 1;
+        "202";
+        dt = .1;
+        "203";
+        a6.pos = vector(2.8, 3.2, 0);
+        "204";
+        a6.axis = vector(1, 1["-u"](), 0);
+        "205";
+        a6.length = 3;
+        "206";
+        while (k3["<"](100)) {
+            "207";
+            if (b7.pos.x["<"](5)) {
+                "208";
+                (await rate(30));
+                "209";
+                b7.pos.x = b7.pos.x["+"](dt);
+                "211";
+            }
+            if (b7.pos.y["<"](.6)) {
+                "212";
+                (await rate(40));
+                "213";
+                b7.pos.y = b7.pos.y["+"](dt);
+            }
+            "214";
+            k3 = k3["+"](1);
+        }
+        "218";
+        k3 = 1;
+        "219";
+        dt = .1;
+        "220";
+        a7.pos = vector(5.2["-u"](), .6, 0);
+        "221";
+        a7.axis = vector(.6["-u"](), 1["-u"](), 0);
+        "222";
+        a7.length = 3;
+        "223";
+        while (k3["<"](200)) {
+            "224";
+            if (b8.pos.x[">"](6.8["-u"]())) {
+                "225";
+                (await rate(30));
+                "226";
+                b8.pos.x = b8.pos.x["-"](dt);
+                "229";
+            }
+            if (b8.pos.y["<"](2.5["-u"]())) {
+                "230";
+                (await rate(40));
+                "231";
+                b8.pos.y = b8.pos.y["+"](dt);
+            }
+            "232";
+            k3 = k3["+"](1);
+        }
+        "235";
+        k3 = 1;
+        "236";
+        dt = .1;
+        "237";
+        a8.pos = vector(5.2["-u"](), .6, 0);
+        "238";
+        a8.axis = vector(.6, 1["-u"](), 0);
+        "239";
+        a8.length = 3;
+        "240";
+        while (k3["<"](200)) {
+            "241";
+            if (b9.pos.x[">"](3.5["-u"]())) {
+                "242";
+                (await rate(30));
+                "243";
+                b9.pos.x = b9.pos.x["-"](dt);
+                "246";
+            }
+            if (b9.pos.y["<"](2.5["-u"]())) {
+                "247";
+                (await rate(40));
+                "248";
+                b9.pos.y = b9.pos.y["+"](dt);
+            }
+            "249";
+            k3 = k3["+"](1);
+        }
+        "252";
+        k3 = 1;
+        "253";
+        dt = .1;
+        "254";
+        a9.pos = vector(.9["-u"](), .6, 0);
+        "255";
+        a9.axis = vector(.6["-u"](), 1["-u"](), 0);
+        "256";
+        a9.length = 3;
+        "257";
+        while (k3["<"](200)) {
+            "258";
+            if (b10.pos.x[">"](2.4["-u"]())) {
+                "259";
+                (await rate(30));
+                "260";
+                b10.pos.x = b10.pos.x["-"](dt);
+                "263";
+            }
+            if (b10.pos.y["<"](2.5["-u"]())) {
+                "264";
+                (await rate(40));
+                "265";
+                b10.pos.y = b10.pos.y["+"](dt);
+            }
+            "266";
+            k3 = k3["+"](1);
+        }
+        "270";
+        k3 = 1;
+        "271";
+        dt = .1;
+        "272";
+        a10.pos = vector(.9["-u"](), .6, 0);
+        "273";
+        a10.axis = vector(.6, 1["-u"](), 0);
+        "274";
+        a10.length = 3;
+        "275";
+        while (k3["<"](200)) {
+            "276";
+            if (b11.pos.x[">"](1)) {
+                "277";
+                (await rate(30));
+                "278";
+                b11.pos.x = b11.pos.x["-"](dt);
+                "281";
+            }
+            if (b11.pos.y["<"](2.5["-u"]())) {
+                "282";
+                (await rate(40));
+                "283";
+                b11.pos.y = b11.pos.y["+"](dt);
+            }
+            "284";
+            k3 = k3["+"](1);
+        }
+        "285";
+        dele9.disabled = false;
+        "287";
+        return;
+    };
+    if (!pro.__argnames__) Object.defineProperties(pro, {
+        __argnames__ : {value: ["ball1"]},
+        __module__ : {value: "__main__"}
+    });
+
+    "290";
+    ball1 = RS_interpolate_kwargs.call(this, button, [RS_desugar_kwargs({text: "Insert", bind: pro, pos: c1.title_anchor})]);
+    "291";
+    dele9 = RS_interpolate_kwargs.call(this, button, [RS_desugar_kwargs({text: "Delete 9", bind: dele9, pos: c1.title_anchor, disabled: true})]);
+    "292";
+    dele4 = RS_interpolate_kwargs.call(this, button, [RS_desugar_kwargs({text: "Delete 4", bind: dele4, pos: c1.title_anchor, disabled: true})]);
+    "293";
+    dele2 = RS_interpolate_kwargs.call(this, button, [RS_desugar_kwargs({text: "Delete 2", bind: dele2, pos: c1.title_anchor, disabled: true})]);
+    "295";
+    async function types(b) {
+        var RS_ls, s;
+        "296";
+        s = "<a href='https://www.glowscript.org/#/user/jyothibhavani123/folder/MyPrograms/program/final' target='_blank'>Types of binary trees<\/a>";
+        "297";
+        c7.caption = s;
+    };
+    if (!types.__argnames__) Object.defineProperties(types, {
+        __argnames__ : {value: ["b"]},
+        __module__ : {value: "__main__"}
+    });
+
+    "299";
+    b = RS_interpolate_kwargs.call(this, button, [RS_desugar_kwargs({text: "Types", bind: types})]);
+    "302";
+    async function deleted() {
+        var RS_ls, dele;
+        "303";
+        dele = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({canvas: c1, text: "Deleted items = ", pos: vector(13["-u"](), 11["-u"](), 0), color: color.red})]);
+        "304";
+        dele.length = .6["*"](dele.length);
+        "305";
+        dele.height = .6["*"](dele.height);
+        "306";
+        dele.depth = .1["*"](dele.depth);
+        "307";
+        return;
+    };
+    if (!deleted.__module__) Object.defineProperties(deleted, {
+        __module__ : {value: "__main__"}
+    });
+
+    "309";
+    (await deleted());
+    "311";
+    async function dele9(dele9) {
+        var RS_ls, dt, kk;
+        "314";
+        dt = .1;
+        "315";
+        kk = 1;
+        "316";
+        while (kk["<"](200)) {
+            "317";
+            if (b9.pos.x[">"](5.5["-u"]())) {
+                "318";
+                (await rate(30));
+                "319";
+                b9.pos.x = b9.pos.x["-"](dt);
+                "321";
+            }
+            if (b9.pos.y[">"](10.7["-u"]())) {
+                "322";
+                (await rate(30));
+                "323";
+                b9.pos.y = b9.pos.y["-"](dt);
+            }
+            "324";
+            kk = kk["+"](1);
+        }
+        "325";
+        a10.pos = vector(15["-u"](), 3.5, 0);
+        "326";
+        a10.axis = vector(0, 1["-u"](), 0);
+        "327";
+        a10.length = 3;
+        "328";
+        b11.pos = vector(3.5["-u"](), 2.5["-u"](), 0);
+        "329";
+        dele4.disabled = false;
+        "330";
+        return;
+    };
+    if (!dele9.__argnames__) Object.defineProperties(dele9, {
+        __argnames__ : {value: ["dele9"]},
+        __module__ : {value: "__main__"}
+    });
+
+    "335";
+    async function dele4(dele4) {
+        var RS_ls, dt, kk;
+        "336";
+        dt = .1;
+        "337";
+        kk = 1;
+        "338";
+        while (kk["<"](200)) {
+            "339";
+            if (b5.pos.x[">"](3.5["-u"]())) {
+                "340";
+                (await rate(30));
+                "341";
+                b5.pos.x = b5.pos.x["-"](dt);
+                "343";
+            }
+            if (b5.pos.y[">"](10.7["-u"]())) {
+                "344";
+                (await rate(30));
+                "345";
+                b5.pos.y = b5.pos.y["-"](dt);
+            }
+            "346";
+            kk = kk["+"](1);
+        }
+        "347";
+        a9.pos = vector(15["-u"](), 3.5, 0);
+        "348";
+        a9.axis = vector(0, 1["-u"](), 0);
+        "349";
+        a9.length = 3;
+        "350";
+        b10.pos = vector(.7["-u"](), .6, 0);
+        "351";
+        dele2.disabled = false;
+        "352";
+        return;
+    };
+    if (!dele4.__argnames__) Object.defineProperties(dele4, {
+        __argnames__ : {value: ["dele4"]},
+        __module__ : {value: "__main__"}
+    });
+
+    "357";
+    async function dele2(dele2) {
+        var RS_ls, dt, kk;
+        "358";
+        dt = .1;
+        "359";
+        kk = 1;
+        "360";
+        while (kk["<"](200)) {
+            "361";
+            if (b3.pos.x[">"](1.5["-u"]())) {
+                "362";
+                (await rate(30));
+                "363";
+                b3.pos.x = b3.pos.x["-"](dt);
+                "365";
+            }
+            if (b3.pos.y[">"](10.7["-u"]())) {
+                "366";
+                (await rate(30));
+                "367";
+                b3.pos.y = b3.pos.y["-"](dt);
+            }
+            "368";
+            kk = kk["+"](1);
+        }
+        "369";
+        a8.pos = vector(15["-u"](), 3.5, 0);
+        "370";
+        a8.axis = vector(0, 1["-u"](), 0);
+        "371";
+        a8.length = 3;
+        "372";
+        b11.pos = vector(2.8, 3.2, 0);
+        "374";
+        return;
+    };
+    if (!dele2.__argnames__) Object.defineProperties(dele2, {
+        __argnames__ : {value: ["dele2"]},
+        __module__ : {value: "__main__"}
+    });
+
+};
+if (!__main__.__module__) Object.defineProperties(__main__, {
+    __module__ : {value: "__main__"}
+});
+
+;$(function(){ window.__context = { glowscript_container: $("#glowscript").removeAttr("id") }; __main__() })})()
+// END JAVASCRIPT
+
+//--><!]]></script>
+</div>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Traversals</title>
+
+
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='profile.css')}}"/>
+
+</head>
+
+
+<body class="overlay-scrollbar">
+
+	<!-- navbar -->
+	<div class="navbar">
+		<!-- nav left -->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link">
+					<i class="fa fa-bars" onclick="collapseSidebar()"></i>
+				</a>
+			</li>
+			<li class="nav-item faculty">
+				<b><!--username-->{{ session['username'] }}</b>
+			</li>
+		</ul>
+
+		<form class="navbar-search">
+			<input type="text" name="Search" class="navbar-search-input" placeholder="Search..">
+			<i class="fa fa-search"></i>
+		</form>
+
+		<ul class="navbar-nav nav-right">
+			<li class="nav-item mode">
+				<a class="nav-link" href="#" onclick="switchTheme()">
+					<i class="fa fa-moon-o dark"></i>
+				</a>
+			</li>
+
+      <ul class="navbar-nav nav-right">
+  			<li class="nav-item mode">
+  				<a class="nav-link" href="#">
+  					<i class="nothing"></i>
+  				</a>
+  			</li>
+
+
+			<li class="nav-item">
+			<li class="nav-item avt-wrapper">
+				<div class="avt dropdown">
+
+          <img src="static/logo.png" alt="User image" class="dropdown-toggle" data-toggle="user-menu">
+					<ul id="user-menu" class="dropdown-menu">
+						<li  class="dropdown-menu-item">
+							<a href="/logout" class="dropdown-menu-link">
+								<div>
+									<i class="fa fa-sign-out"></i>
+								</div>
+								<span>Logout</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<!-- end nav right -->
+	</div>
+	<!-- end navbar -->
+	<!-- sidebar -->
+	<div class="sidebar">
+		<ul class="sidebar-nav">
+			<li class="sidebar-nav-item">
+				<a href="/tree" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-tree"></i>
+					</div>
+					<span class='span'>
+						Binary Tree
+					</span>
+				</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a href="/properties" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-gear"></i>
+					</div>
+					<span class='span'>Application</span>
+				</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a href="/types" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-sort"></i>
+					</div>
+					<span class='span'>Types</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="/insert" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-random"></i>
+					</div>
+					<span class='span'>Insert & Delete</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="/depth" class="sidebar-nav-link ">
+					<div>
+						<i class="fa fa-sort-amount-desc"></i>
+					</div>
+					<span class='span'>Height and Depth</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="/traversal" class="sidebar-nav-link active">
+					<div>
+						<i class="fa fa-tasks"></i>
+					</div>
+					<span class='span'>Traversal</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="/practice" class="sidebar-nav-link">
+					<div>
+						<i class="fa fa-question-circle"></i>
+					</div>
+					<span class='span'>Practice Problems</span>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+
+	<div class="wrapper">
+
+		<div class="row">
+
+			<div class="col-10 col-m-12 col-sm-12">
+				<div class="card">
+					<div class="card-header">
+						<h1 style="font-size:2.5rem;">
+							Different types of traversals in a binary tree
+						</h1>
+          <!--  <i><a href="#" class="fancy-button bg-gradient1"><span>Edit Profile</span></a></i>-->
+ </div>
+
+
+
+					<div class="card-content">
+						<br>
+
+<p>Traversal is a process to visit all the nodes of a tree and may print their values too. Because, all nodes are connected via edges (links) we always start from the root (head) node. That is, we cannot randomly access a node in a tree. There are three ways which we use to traverse a tree −
+<ul>
+<li>In-order Traversal
+<li>Pre-order Traversal
+<li>Post-order Traversal
+</ul>
+<img src="static/tree.png" alt="User image" class="center" style="height:500px;width:950px;">
+<p>Generally, we traverse a tree to search or locate a given item or key in the tree or to print all the values it contains.</p>
+<br>
+<h3>In-order Traversal</h3>
+<p>For binary search trees (BST), Inorder Traversal specifies the nodes in non-descending order. In order to obtain nodes from BST in non-increasing order, a variation of inorder traversal may be used where inorder traversal is reversed.</p>
+<br>
+<article>
+<b>Algorithm</b>
+<ol>
+<i>Inorder(root)</i><br>
+<li>Traverse the left sub-tree, (recursively call Inorder(root -> left).
+<li>Visit and print the root node.
+<li>Traverse the right sub-tree, (recursively call Inorder(root -> right).
+</ol>
+</article>
+<br>
+<h3>Example</h3>
+<img src="static/inorder.jpg" alt="User image" class="center">
+<br>
+<br>
+<h3>Try it yourself</h3>
+<iframe src="/in" width="900" height="700" style="border:none;background:none transparent;" allowtransparency="true"></iframe>
+<br>
+<br>
+<a href="#">
+	<button class="fancy-button bg-gradient1" style="border:none; background:none;" type="submit" onClick="window.location.reload();">
+		<span>Try again</span></button>
+            </a>
+
+<br>
+
+<h3>Pre-order Traversal</h3>
+<p>Preorder traversal will create a copy of the tree. Preorder Traversal is also used to get the prefix expression of an expression.
+</p>
+<br>
+<article>
+<b>Algorithm</b>
+<ol>
+<i>Preorder(root)</i><br>
+<li>Visit and print the root node.
+<li>Traverse the left sub-tree, (recursively call Preorder(root -> left).
+<li>Traverse the right sub-tree, (recursively call Preorder(root -> right).
+</ol>
+</article>
+<br>
+<h3>Example</h3>
+<img src="static/preorder.jpg" alt="User image" class="center">
+<br>
+<br>
+<h3>Try it yourself</h3>
+<iframe src="/pre" width="900" height="700" style="border:none;background:none transparent;" allowtransparency="true"></iframe>
+<br>
+<br>
+<a href="#">
+	<button class="fancy-button bg-gradient1" style="border:none; background:none;" type="submit" onClick="window.location.reload();">
+		<span>Try again</span></button>
+            </a>
+
+<br>
+
+<h3>Post-order Traversal</h3>
+<p>Postorder traversal is used to get the postfix expression of an expression given.
+</p>
+<br>
+<article>
+<b>Algorithm</b>
+<ol>
+<i>Postorder(root)</i><br>
+<li>Traverse the left sub-tree, (recursively call Postorder(root -> left).
+<li>Traverse the right sub-tree, (recursively call Postorder(root -> right).
+	<li>Visit and print the root node.
+</ol>
+</article>
+<br>
+<h3>Example</h3>
+<img src="static/postorder.jpg" alt="User image" class="center">
+<br>
+<br>
+<h3>Try it yourself</h3>
+<iframe src="/post" width="900" height="700"style="border:none;background:none transparent;" allowtransparency="true"></iframe>
+<br>
+<br>
+<a href="#">
+	<button class="fancy-button bg-gradient1" style="border:none; background:none;" type="submit" onClick="window.location.reload();">
+		<span>Try again</span></button>
+            </a>
+
+<br>
+
+<h3>Euler Traversal</h3>
+<p>Euler tour is defined as a way of traversing tree such that each vertex is added to the tour when we visit it (either moving down from parent vertex or returning from child vertex). We start from root and reach back to root after visiting all vertices.
+<b>It requires exactly 2*N-1 vertices to store Euler tour.</b>
+</p>
+<br>
+<article>
+<b>Algorithm</b>
+<p>Given an undirected tree presented as a set of edges, the Euler tour representation (ETR) can be constructed in parallel as follows:</p>
+<ol>
+<li>We construct a symmetric list of directed edges:</li>
+<ul>
+<li>For each undirected edge {u,v} in the tree, insert (u,v) and (v,u) in the edge list.</ul>
+<li>Sort the edge list lexicographically. (Here we assume that the nodes of the tree are ordered, and that the root is the first element in this order.)
+<li>Construct adjacency lists for each node (called next) and a map from nodes to the first entries of the adjacency lists (called first):
+<li>For each edge (u,v) in the list, do in parallel:
+<ul><li>If the previous edge (x,y) has x ≠ u, i.e. starts from a different node, set first(u) = (u,v)
+<li>Else if x = u, i.e. starts from the same node, set next(x,y) = (u,v)</ul></ol>
+
+</article>
+<br>
+<h3>Example</h3>
+<img src="static/euler.png" alt="User image" class="center">
+<br>
+<br>
+<h3>Try it yourself</h3>
+<iframe src="/euler" width="900" height="700" style="border:none;background:none transparent;" allowtransparency="true"></iframe>
+<br>
+<br>
+<a href="#">
+	<button class="fancy-button bg-gradient1" style="border:none; background:none;" type="submit" onClick="window.location.reload();">
+		<span>Try again</span></button>
+            </a>
+
+<br>
+
+
+<h3>Level-order Traversal</h3>
+<p>Level order traversal of a tree is breadth first traversal for the tree.
+</p>
+<br>
+<article>
+<b>Algorithm</b>
+	<ol>
+		<li>Create empty queue and push root node to it.
+<li>Do the following when queue is not empty
+		<ul>
+<li>Pop a node from queue and print it
+<li>Push left child of popped node to queue if not null
+			<li>Push right child of popped node to queue if not null</ul></ol></li>
+	</ol>
+</article>
+<br>
+<h3>Example</h3>
+<img src="static/level.png" alt="User image" class="center">
+<br>
+<br>
+<h3>Try it yourself</h3>
+<iframe src="/level" width="900" height="700" style="border:none;background:none transparent;" allowtransparency="true"></iframe>
+<br>
+<br>
+<a href="#">
+	<button class="fancy-button bg-gradient1" style="border:none; background:none;" type="submit" onClick="window.location.reload();">
+		<span>Try again</span></button>
+            </a>
+
+<br>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+
+<script type = "text/javascript" src = "{{ url_for('static',filename = 'profile.js') }}" ></script>
+
+
+</body>
+</html>

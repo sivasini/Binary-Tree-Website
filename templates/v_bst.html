@@ -1,0 +1,351 @@
+<div id="glowscript" class="glowscript">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" href="https://www.glowscript.org/css/redmond/2.1/jquery-ui.custom.css" rel="stylesheet" />
+<link type="text/css" href="https://www.glowscript.org/css/ide.css" rel="stylesheet" />
+<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/lib/jquery/2.1/jquery-ui.custom.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/package/glow.3.0.min.js"></script>
+<script type="text/javascript" src="https://www.glowscript.org/package/RSrun.3.0.min.js"></script>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+
+// START JAVASCRIPT
+;(function() {;
+async function __main__() {
+"use strict";
+
+    var version, display, vector, print, arange, __name__, type, scene, RS_ls, i1, i3, i2, i4, i5, i6, i7, t1, t2, t8, t3, t4, t5, t6, t9, t10, t11, s1, a1, s2, a2, s8, s3, a3, a4, s4, a5, s5, a6, s6, a7, s9, a8, s10, a9, s11, k3, dt;
+    version = RS_list_decorate([ "3.0", "glowscript" ]);
+    Array.prototype['+'] = function(r) {return this.concat(r)}
+    Array.prototype['*'] = function(r) {return __array_times_number(this, r)}
+    window.__GSlang = "vpython";
+    display = canvas;
+    vector = vec;
+    print = GSprint;
+    arange = range;
+    __name__ = "__main__";
+    type = pytype;
+    scene = canvas();
+    fontloading();
+    await waitforfonts();
+    "2";
+    i1 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: "Binary Search Tree Insertion!", pos: vector(0, 1.4["-u"](), 0), align: "center", height: .2, color: color.magenta, emissive: true})]);
+    "4";
+    i3 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: "Search for 13!", pos: vector(0, 1.4["-u"](), 0), align: "center", height: .2, color: color.magenta, emissive: true})]);
+    "5";
+    i2 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: "done!", pos: vector(0, 1.4["-u"](), 0), align: "center", height: .2, color: color.magenta, emissive: true})]);
+    "6";
+    i4 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: "Search for 14!", pos: vector(0, 1.4["-u"](), 0), align: "center", height: .2, color: color.magenta, emissive: true})]);
+    "7";
+    i5 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: "Deleting a leaf node!", pos: vector(0, 1.4["-u"](), 0), align: "center", height: .2, color: color.magenta, emissive: true})]);
+    "8";
+    i6 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: "Deleting a node with one child!", pos: vector(0, 1.4["-u"](), 0), align: "center", height: .2, color: color.magenta, emissive: true})]);
+    "9";
+    i7 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: "Deleting a node with two children!", pos: vector(0, 1.4["-u"](), 0), align: "center", height: .2, color: color.magenta, emissive: true})]);
+    "10";
+    i2.visible = false;
+    "11";
+    i3.visible = false;
+    "12";
+    i4.visible = false;
+    "13";
+    i5.visible = false;
+    "14";
+    i6.visible = false;
+    "15";
+    i7.visible = false;
+    "52";
+    t1 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 8, pos: vector(2["-u"](), 1.7["-u"](), 0), align: "center", height: .2, color: color.red})]);
+    "53";
+    t2 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 3, pos: vector(1.6["-u"](), 1.7["-u"](), 0), align: "center", height: .2, color: color.red})]);
+    "54";
+    t8 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 10, pos: vector(1.2["-u"](), 1.7["-u"](), 0), align: "center", height: .2, color: color.red})]);
+    "55";
+    t3 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 1, pos: vector(.8["-u"](), 1.7["-u"](), 0), align: "center", height: .2, color: color.red})]);
+    "56";
+    t4 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 6, pos: vector(.4["-u"](), 1.7["-u"](), 0), align: "center", height: .2, color: color.red})]);
+    "57";
+    t5 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 5, pos: vector(0, 1.7["-u"](), 0), align: "center", height: .2, color: color.red})]);
+    "58";
+    t6 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 4, pos: vector(.4, 1.7["-u"](), 0), align: "center", height: .2, color: color.red})]);
+    "59";
+    t9 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 14, pos: vector(.8, 1.7["-u"](), 0), align: "center", height: .2, color: color.red})]);
+    "60";
+    t10 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 13, pos: vector(1.2, 1.7["-u"](), 0), align: "center", height: .2, color: color.red})]);
+    "61";
+    t11 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 15, pos: vector(1.6, 1.7["-u"](), 0), align: "center", height: .2, color: color.red})]);
+    "68";
+    (await scene.waitfor("keydown"));
+    "70";
+    s1 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(0, 1, 0), color: color.blue, size: .1["*"](vector(3, 2, 1))})]);
+    "71";
+    t1 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 8, pos: vector(0, 1.2, 0), align: "center", height: .2, color: color.red})]);
+    "73";
+    (await scene.waitfor("keydown"));
+    "74";
+    a1 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({pos: vector(0, 1, 0), color: color.orange, size: .2["*"](vector(3, 2, 1)), axis: vector(1["-u"](), 1["-u"](), 0)})]);
+    "76";
+    s2 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(.5["-u"](), .5, 0), color: color.white, size: .1["*"](vector(3, 2, 1))})]);
+    "77";
+    t2 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 3, pos: vector(.5["-u"](), .7, 0), align: "center", height: .2, color: color.red})]);
+    "79";
+    (await scene.waitfor("keydown"));
+    "80";
+    a2 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({pos: vector(0, 1, 0), color: color.orange, size: .2["*"](vector(3, 2, 1)), axis: vector(1, 1["-u"](), 0)})]);
+    "82";
+    s8 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(.5, .5, 0), color: color.green, size: .1["*"](vector(3, 2, 1))})]);
+    "83";
+    t8 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 10, pos: vector(.5, .7, 0), align: "center", height: .2, color: color.red})]);
+    "84";
+    (await scene.waitfor("keydown"));
+    "87";
+    s3 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(1["-u"](), 0, 0), color: color.yellow, size: .1["*"](vector(3, 2, 1))})]);
+    "88";
+    t3 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 1, pos: vector(1["-u"](), .2, 0), align: "center", height: .2, color: color.red})]);
+    "89";
+    a3 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({pos: vector(.5["-u"](), .5, 0), color: color.orange, size: .2["*"](vector(3, 2, 1)), axis: vector(1["-u"](), 1["-u"](), 0)})]);
+    "90";
+    (await scene.waitfor("keydown"));
+    "91";
+    a4 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({pos: vector(.5["-u"](), .5, 0), color: color.orange, size: .2["*"](vector(3, 2, 1)), axis: vector(1, 1["-u"](), 0)})]);
+    "93";
+    s4 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(0, 0, 0), color: color.cyan, size: .1["*"](vector(3, 2, 1))})]);
+    "94";
+    t4 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 6, pos: vector(0, .2, 0), align: "center", height: .2, color: color.red})]);
+    "96";
+    (await scene.waitfor("keydown"));
+    "97";
+    a5 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({pos: vector(0, 0, 0), color: color.orange, size: .2["*"](vector(3, 2, 1)), axis: vector(1["-u"](), 1["-u"](), 0)})]);
+    "100";
+    s5 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(.5["-u"](), .5["-u"](), 0), color: color.magenta, size: .1["*"](vector(3, 2, 1))})]);
+    "101";
+    t5 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 5, pos: vector(.5["-u"](), .3["-u"](), 0), align: "center", height: .2, color: color.red})]);
+    "102";
+    (await scene.waitfor("keydown"));
+    "103";
+    a6 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({pos: vector(.5["-u"](), .5["-u"](), 0), color: color.orange, size: .2["*"](vector(3, 2, 1)), axis: vector(1["-u"](), 1["-u"](), 0)})]);
+    "105";
+    s6 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(1["-u"](), 1["-u"](), 0), color: vector(.2, .5, .4), size: .1["*"](vector(3, 2, 1))})]);
+    "106";
+    t6 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 4, pos: vector(1["-u"](), .8["-u"](), 0), align: "center", height: .2, color: color.red})]);
+    "107";
+    (await scene.waitfor("keydown"));
+    "108";
+    a7 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({pos: vector(.5, .5, 0), color: color.orange, size: .2["*"](vector(3, 2, 1)), axis: vector(1, 1["-u"](), 0)})]);
+    "110";
+    s9 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(1, 0, 0), color: vector(.2, .6, .3), size: .1["*"](vector(3, 2, 1))})]);
+    "111";
+    t9 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 14, pos: vector(1, .2, 0), align: "center", height: .2, color: color.red})]);
+    "113";
+    (await scene.waitfor("keydown"));
+    "114";
+    a8 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({pos: vector(1, 0, 0), color: color.orange, size: .2["*"](vector(3, 2, 1)), axis: vector(1["-u"](), 1["-u"](), 0)})]);
+    "116";
+    s10 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(.5, .5["-u"](), 0), color: color.purple, size: .1["*"](vector(3, 2, 1))})]);
+    "117";
+    t10 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 13, pos: vector(.5, .3["-u"](), 0), align: "center", height: .2, color: color.red})]);
+    "119";
+    (await scene.waitfor("keydown"));
+    "120";
+    a9 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({pos: vector(1, 0, 0), color: color.orange, size: .2["*"](vector(3, 2, 1)), axis: vector(1, 1["-u"](), 0)})]);
+    "122";
+    s11 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(1.5, .5["-u"](), 0), color: vector(.8, .6, 1), size: .1["*"](vector(3, 2, 1))})]);
+    "123";
+    t11 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 15, pos: vector(1.5, .3["-u"](), 0), align: "center", height: .2, color: color.red})]);
+    "127";
+    i1.visible = false;
+    "128";
+    i2.visible = true;
+    "129";
+    (await scene.waitfor("keydown"));
+    "130";
+    i2.visible = false;
+    "131";
+    i3.visible = true;
+    "135";
+    (await scene.waitfor("keydown"));
+    "136";
+    s1 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(0, 1, 0), color: color.red, size: .1["*"](vector(3, 2, 1))})]);
+    "137";
+    (await scene.waitfor("keydown"));
+    "138";
+    s1 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(0, 1, 0), color: color.blue, size: .1["*"](vector(3, 2, 1))})]);
+    "140";
+    a2 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({pos: vector(0, 1, 0), color: color.red, size: .2["*"](vector(3, 2, 1)), axis: vector(1, 1["-u"](), 0)})]);
+    "141";
+    (await scene.waitfor("keydown"));
+    "142";
+    a2 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({pos: vector(0, 1, 0), color: color.orange, size: .2["*"](vector(3, 2, 1)), axis: vector(1, 1["-u"](), 0)})]);
+    "145";
+    s8 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(.5, .5, 0), color: color.red, size: .1["*"](vector(3, 2, 1))})]);
+    "146";
+    (await scene.waitfor("keydown"));
+    "147";
+    s8 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(.5, .5, 0), color: color.green, size: .1["*"](vector(3, 2, 1))})]);
+    "150";
+    a7 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({pos: vector(.5, .5, 0), color: color.red, size: .2["*"](vector(3, 2, 1)), axis: vector(1, 1["-u"](), 0)})]);
+    "151";
+    (await scene.waitfor("keydown"));
+    "152";
+    a7 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({pos: vector(.5, .5, 0), color: color.orange, size: .2["*"](vector(3, 2, 1)), axis: vector(1, 1["-u"](), 0)})]);
+    "155";
+    s9 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(1, 0, 0), color: color.red, size: .1["*"](vector(3, 2, 1))})]);
+    "156";
+    (await scene.waitfor("keydown"));
+    "157";
+    s9 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(1, 0, 0), color: vector(.2, .6, .3), size: .1["*"](vector(3, 2, 1))})]);
+    "160";
+    a8 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({pos: vector(1, 0, 0), color: color.red, size: .2["*"](vector(3, 2, 1)), axis: vector(1["-u"](), 1["-u"](), 0)})]);
+    "161";
+    (await scene.waitfor("keydown"));
+    "162";
+    a8 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({pos: vector(1, 0, 0), color: color.orange, size: .2["*"](vector(3, 2, 1)), axis: vector(1["-u"](), 1["-u"](), 0)})]);
+    "165";
+    s10 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(.5, .5["-u"](), 0), color: color.red, size: .1["*"](vector(3, 2, 1))})]);
+    "166";
+    (await scene.waitfor("keydown"));
+    "167";
+    s10 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(.5, .5["-u"](), 0), color: color.purple, size: .1["*"](vector(3, 2, 1))})]);
+    "170";
+    i3.visible = false;
+    "171";
+    i4.visible = true;
+    "175";
+    (await scene.waitfor("keydown"));
+    "176";
+    s1 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(0, 1, 0), color: color.red, size: .1["*"](vector(3, 2, 1))})]);
+    "177";
+    (await scene.waitfor("keydown"));
+    "178";
+    s1 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(0, 1, 0), color: color.blue, size: .1["*"](vector(3, 2, 1))})]);
+    "179";
+    a2.color = color.red;
+    "180";
+    (await scene.waitfor("keydown"));
+    "181";
+    a2 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({pos: vector(0, 1, 0), color: color.orange, size: .2["*"](vector(3, 2, 1)), axis: vector(1, 1["-u"](), 0)})]);
+    "182";
+    s8.color = color.red;
+    "183";
+    (await scene.waitfor("keydown"));
+    "184";
+    s8 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(.5, .5, 0), color: color.green, size: .1["*"](vector(3, 2, 1))})]);
+    "185";
+    a7.color = color.red;
+    "186";
+    (await scene.waitfor("keydown"));
+    "187";
+    a7 = RS_interpolate_kwargs.call(this, arrow, [RS_desugar_kwargs({pos: vector(.5, .5, 0), color: color.orange, size: .2["*"](vector(3, 2, 1)), axis: vector(1, 1["-u"](), 0)})]);
+    "188";
+    s9.color = color.red;
+    "189";
+    (await scene.waitfor("keydown"));
+    "190";
+    s9 = RS_interpolate_kwargs.call(this, sphere, [RS_desugar_kwargs({pos: vector(1, 0, 0), color: vector(.2, .6, .3), size: .1["*"](vector(3, 2, 1))})]);
+    "193";
+    i4.visible = false;
+    "194";
+    i5.visible = true;
+    "196";
+    (await scene.waitfor("keydown"));
+    "197";
+    a6.visible = false;
+    "198";
+    t6.visible = false;
+    "199";
+    s6.visible = false;
+    "201";
+    (await scene.waitfor("keydown"));
+    "202";
+    i5.visible = false;
+    "203";
+    i6.visible = true;
+    "205";
+    (await scene.waitfor("keydown"));
+    "206";
+    a5.visible = false;
+    "207";
+    t4.visible = false;
+    "208";
+    s4.visible = false;
+    "210";
+    (await scene.waitfor("keydown"));
+    "211";
+    k3 = 1;
+    "212";
+    dt = .1;
+    "213";
+    while (k3["<"](200)) {
+        "214";
+        if (s5.pos.x["<"](.1["-u"]())) {
+            "215";
+            (await rate(30));
+            "216";
+            s5.pos.x = s5.pos.x["+"](dt);
+            "219";
+        }
+        if (s5.pos.y["<"](.1["-u"]())) {
+            "220";
+            (await rate(40));
+            "221";
+            s5.pos.y = s5.pos.y["+"](dt);
+        }
+        "222";
+        k3 = k3["+"](1);
+    }
+    "223";
+    t5.visible = false;
+    "224";
+    t6 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 5, pos: vector(.1, .2, 0), align: "center", height: .2, color: color.red})]);
+    "226";
+    (await scene.waitfor("keydown"));
+    "227";
+    i6.visible = false;
+    "228";
+    i7.visible = true;
+    "230";
+    (await scene.waitfor("keydown"));
+    "231";
+    a3.visible = false;
+    "232";
+    t2.visible = false;
+    "233";
+    s2.visible = false;
+    "235";
+    (await scene.waitfor("keydown"));
+    "236";
+    k3 = 1;
+    "237";
+    dt = .1;
+    "238";
+    while (k3["<"](200)) {
+        "239";
+        if (s3.pos.x["<"](.6["-u"]())) {
+            "240";
+            (await rate(30));
+            "241";
+            s3.pos.x = s3.pos.x["+"](dt);
+            "244";
+        }
+        if (s3.pos.y["<"](.5)) {
+            "245";
+            (await rate(40));
+            "246";
+            s3.pos.y = s3.pos.y["+"](dt);
+        }
+        "247";
+        k3 = k3["+"](1);
+    }
+    "248";
+    t3.visible = false;
+    "249";
+    t3 = RS_interpolate_kwargs.call(this, text, [RS_desugar_kwargs({text: 1, pos: vector(.5["-u"](), .6, 0), align: "center", height: .2, color: color.red})]);
+};
+if (!__main__.__module__) Object.defineProperties(__main__, {
+    __module__ : {value: "__main__"}
+});
+
+;$(function(){ window.__context = { glowscript_container: $("#glowscript").removeAttr("id") }; __main__() })})()
+// END JAVASCRIPT
+
+//--><!]]></script>
+</div>
