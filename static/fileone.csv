@@ -1,0 +1,96 @@
+ref,text
+https://en.wikipedia.org/wiki/Binary_tree,Binary Tree
+https://www.techiedelight.com/inorder-tree-traversal-iterative-recursive/,Inorder Tree Traversal
+https://www.techiedelight.com/preorder-tree-traversal-iterative-recursive/,Preorder Tree Traversal
+https://www.techiedelight.com/postorder-tree-traversal-iterative-recursive/,Postorder Tree Traversal
+https://www.techiedelight.com/check-if-two-binary-trees-are-identical-not-iterative-recursive/,Check if two binary trees are identical or not
+https://www.techiedelight.com/print-bottom-view-of-binary-tree/,Print bottom view of a binary tree
+https://www.techiedelight.com/print-top-view-binary-tree/,Print top view of a binary tree
+https://www.techiedelight.com/inplace-convert-a-tree-sum-tree/,In-place convert a binary tree to its sum tree
+https://www.techiedelight.com/determine-two-nodes-are-cousins/,Determine whether the given binary tree nodes are cousins of each other
+https://www.techiedelight.com/print-cousins-of-given-node-binary-tree/,Print cousins of a given node in a binary tree
+https://www.techiedelight.com/check-given-binary-tree-sum-tree-not/,Check if a binary tree is a sum tree or not
+https://www.techiedelight.com/combinations-of-words-formed-replacing-given-numbers-corresponding-english-alphabet/,Combinations of words formed by replacing given numbers with corresponding alphabets
+https://www.techiedelight.com/determine-given-binary-tree-is-subtree-of-another-binary-tree-not/,Determine whether a binary tree is a subtree of another binary tree
+https://www.techiedelight.com/find-diameter-of-a-binary-tree/,Find the diameter of a binary tree
+https://www.techiedelight.com/check-given-binary-tree-symmetric-structure-not/,Check if a binary tree is symmetric or not
+https://www.techiedelight.com/convert-binary-tree-to-its-mirror/,Convert a binary tree to its mirror
+https://www.techiedelight.com/determine-binary-tree-can-converted-another-number-swaps-left-right-child/,Determine if a binary tree can be converted to another by doing any number of swaps of children
+https://www.techiedelight.com/find-lowest-common-ancestor-lca-two-nodes-binary-tree/,Find the Lowest Common Ancestor (LCA) of two nodes in a binary tree
+https://www.techiedelight.com/print-all-paths-from-root-to-leaf-nodes-binary-tree/,Print all paths from the root to leaf nodes of a binary tree
+https://www.techiedelight.com/find-ancestors-of-given-node-binary-tree/,Find ancestors of a given node in a binary tree
+https://www.techiedelight.com/distance-between-given-pairs-of-nodes-binary-tree/,Find distance between given pairs of nodes in a binary tree
+https://www.techiedelight.com/find-diagonal-sum-given-binary-tree/,Find the diagonal sum of a binary tree
+https://www.techiedelight.com/sink-nodes-containing-zero-bottom-binary-tree/,Sink nodes containing zero to the bottom of a binary tree
+https://www.techiedelight.com/convert-given-binary-tree-to-full-tree-removing-half-nodes/,Convert a binary tree to a full tree by removing half nodes
+https://www.techiedelight.com/truncate-given-binary-tree-remove-nodes-lie-path-sum-less-k/,Truncate a binary tree to remove nodes that lie on a path having a sum less than `k`
+https://www.techiedelight.com/find-maximum-sum-root-to-leaf-path-binary-tree/,Find maximum sum root to leaf path in a binary tree
+https://www.techiedelight.com/check-given-binary-tree-is-height-balanced-not/,Check if a binary tree is height-balanced or not
+https://www.techiedelight.com/convert-normal-binary-tree-left-child-right-sibling-binary-tree/,Convert binary tree to Left-child right-sibling binary tree
+https://www.techiedelight.com/print-all-paths-from-leaf-to-root-binary-tree/,Print all paths from leaf to root node of a binary tree
+https://www.techiedelight.com/print-leaf-to-root-path-binary-tree/,Iteratively print the leaf to root path for every leaf node in a binary tree
+https://www.techiedelight.com/build-binary-tree-given-parent-array/,Build a binary tree from a parent array
+https://www.techiedelight.com/find-all-nodes-at-given-distance-from-leaf-nodes-in-a-binary-tree/,Find all nodes at a given distance from leaf nodes in a binary tree
+https://www.techiedelight.com/count-subtrees-value-nodes-binary-tree/,Count all subtrees having the same value of nodes in a binary tree
+https://www.techiedelight.com/find-maximum-difference-node-descendants/,Find the maximum difference between a node and its descendants in a binary tree
+https://www.techiedelight.com/find-maximum-sum-path-between-two-leaves-in-a-binary-tree/,Find the maximum sum path between two leaves in a binary tree
+https://www.techiedelight.com/construct-binary-tree-from-inorder-preorder-traversal/,Construct a binary tree from inorder and preorder traversal
+https://www.techiedelight.com/construct-binary-tree-from-inorder-postorder-traversals/,Construct a binary tree from inorder and postorder traversals
+https://www.techiedelight.com/construct-binary-tree-from-inorder-level-order-traversals/,Construct a binary tree from inorder and level order sequence
+https://www.techiedelight.com/construct-full-binary-tree-from-preorder-sequence-with-leaf-information/,Construct a full binary tree from the preorder sequence with leaf node information
+https://www.techiedelight.com/construct-full-binary-tree-from-preorder-postorder-sequence/,Construct a full binary tree from a preorder and postorder sequence
+https://www.techiedelight.com/find-postorder-traversal-binary-tree-from-inorder-preorder-sequence/,Find postorder traversal of a binary tree from its inorder and preorder sequence
+https://www.techiedelight.com/set-next-pointer-inorder-successor-binary-tree/,Set next pointer to the inorder successor of all nodes in a binary tree
+https://www.techiedelight.com/find-preorder-traversal-binary-tree-from-inorder-postorder/,Find preorder traversal of a binary tree from its inorder and postorder sequence
+https://www.techiedelight.com/difference-between-sum-nodes-odd-even-levels/,Find the difference between the sum of all nodes present at odd and even levels in a binary tree
+https://www.techiedelight.com/clone-a-binary-tree-with-random-pointers/,Clone a binary tree with random pointers
+https://www.techiedelight.com/threaded-binary-tree-overview-implementation/,Threaded Binary Tree — Overview and Implementation
+https://www.techiedelight.com/determine-binary-tree-satisfy-height-balanced-property-red-black-tree/,Determine if a binary tree satisfies the height-balanced property of a red–black tree
+https://www.techiedelight.com/construct-ancestor-matrix-from-binary-tree/,Construct an ancestor matrix from a binary tree
+https://www.techiedelight.com/binary-trees-having-same-inorder-traversal/,Find all possible binary trees having the same inorder traversal
+https://www.techiedelight.com/boundary-traversal-binary-tree/,Perform boundary traversal on a binary tree
+https://www.techiedelight.com/check-skewed-binary-tree/,Check if each node of a binary tree has exactly one child
+https://www.techiedelight.com/evaluate-binary-expression-tree/,Evaluate a Binary Expression Tree
+https://www.techiedelight.com/expression-tree/,Construction of an expression tree
+https://www.techiedelight.com/fix-children-sum-property-binary-tree/,Fix children-sum property in a binary tree
+https://www.techiedelight.com/maximum-path-sum-binary-tree/,Maximum path sum in a binary tree
+https://www.techiedelight.com/mirror-of-m-ary-tree/,Create a mirror of an m–ary tree
+https://www.techiedelight.com/print-two-dimensional-view-binary-tree/,Print a two-dimensional view of a binary tree
+https://www.techiedelight.com/construct-binary-tree-ancestor-matrix/,Construct a binary tree from an ancestor matrix
+https://www.techiedelight.com/determine-given-binary-tree-is-a-bst-or-not/,Determine whether a given binary tree is a BST or not
+https://www.techiedelight.com/find-inorder-successor-given-key-bst/,Find inorder successor for the given key in a BST
+https://www.techiedelight.com/fix-binary-tree-one-swap-bst/,Fix a binary tree that is only one swap away from becoming a BST
+https://www.techiedelight.com/find-size-largest-bst-in-binary-tree/,Find the size of the largest BST in a binary tree
+https://www.techiedelight.com/c-program-print-binary-tree/,Print binary tree structure with its contents in C++
+https://www.techiedelight.com/maximum-independent-set-problem/,Maximum Independent Set Problem
+https://www.techiedelight.com/huffman-coding/,Huffman Coding Compression Algorithm
+https://www.techiedelight.com/construct-cartesian-tree-from-inorder-traversal/,Construct a Cartesian tree from an inorder traversal
+https://www.techiedelight.com/calculate-height-binary-tree-leaf-nodes-forming-circular-doubly-linked-list/,Calculate the height of a binary tree with leaf nodes forming a circular doubly linked list
+https://www.techiedelight.com/link-nodes-each-level-binary-tree/,Link nodes present in each level of a binary tree in the form of a linked list
+https://www.techiedelight.com/convert-ternary-tree-doubly-linked-list/,Convert a ternary tree to a doubly-linked list
+https://www.techiedelight.com/extract-leaves-of-binary-tree-into-doubly-linked-list/,Extract leaves of a binary tree into a doubly-linked list
+https://www.techiedelight.com/find-vertical-sum-given-binary-tree/,Find the vertical sum of a binary tree
+https://www.techiedelight.com/place-convert-given-binary-tree-to-doubly-linked-list/,In-place convert a binary tree to a doubly-linked list
+https://www.techiedelight.com/check-leaf-traversal-binary-trees-is-same/,Check whether the leaf traversal of given binary trees is the same or not
+https://www.techiedelight.com/print-nodes-between-two-levels-binary-tree/,Efficiently print all nodes between two given levels in a binary tree
+https://www.techiedelight.com/calculate-height-binary-tree-iterative-recursive/,Calculate the height of a binary tree
+https://www.techiedelight.com/delete-given-binary-tree-iterative-recursive/,Delete a binary tree
+https://www.techiedelight.com/level-order-traversal-binary-tree/,Level order traversal of a binary tree
+https://www.techiedelight.com/spiral-order-traversal-binary-tree/,Spiral order traversal of a binary tree
+https://www.techiedelight.com/reverse-level-order-traversal-binary-tree/,Reverse level order traversal of a binary tree
+https://www.techiedelight.com/print-nodes-binary-tree-specific-order/,Print all nodes of a perfect binary tree in a specific order
+https://www.techiedelight.com/print-left-view-of-binary-tree/,Print left view of a binary tree
+https://www.techiedelight.com/find-next-node-in-same-level-binary-tree/,Find the next node at the same level as the given node in a binary tree
+https://www.techiedelight.com/check-given-binary-tree-complete-binary-tree-not/,Check if a binary tree is a complete binary tree or not
+https://www.techiedelight.com/print-diagonal-traversal-binary-tree/,Print diagonal traversal of a binary tree
+https://www.techiedelight.com/print-corner-nodes-every-level-binary-tree/,Print corner nodes of every level in a binary tree
+https://www.techiedelight.com/invert-binary-tree-recursive-iterative/,Invert Binary Tree
+https://www.techiedelight.com/convert-binary-tree-into-doubly-linked-list/,Convert a binary tree into a doubly-linked list in spiral order
+https://www.techiedelight.com/check-binary-tree-is-min-heap/,Check if a binary tree is a min-heap or not
+https://www.techiedelight.com/invert-alternate-levels-perfect-binary-tree/,Invert alternate levels of a perfect binary tree
+https://www.techiedelight.com/vertical-traversal-binary-tree/,Perform vertical traversal of a binary tree
+https://www.techiedelight.com/find-maximum-width-given-binary-tree/,Compute the maximum number of nodes at any level in a binary tree
+https://www.techiedelight.com/print-right-view-binary-tree/,Print right view of a binary tree
+https://www.techiedelight.com/find-minimum-depth-binary-tree/,Find the minimum depth of a binary tree
+https://www.techiedelight.com/depth-first-search-dfs-vs-breadth-first-search-bfs/,Depth-First Search (DFS) vs Breadth-First Search (BFS)
+https://www.techiedelight.com/print-nodes-binary-tree-vertical-order/,Print nodes of a binary tree in vertical order
